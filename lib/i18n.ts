@@ -7,8 +7,9 @@ export const i18n = {
     },
     hero: {
       badge: 'BISA COMPETITIVE TRYOUTS 2026–2027',
-      headline: 'GIVE YOUR CHILD THE CHANCE THEY DESERVE',
-      subheadline: 'Every great player started somewhere. BISA gives your child elite coaching, real feedback, and a clear path forward — right here in South Carolina.',
+      headlinePart1: 'TRYOUTS ARE',
+      headlinePart2: 'NOW OPEN',
+      subheadline: 'Elite coaching. Real development. Secure your spot today.',
       hooks: [
         'Expert coaches who truly develop your child — not just play them',
         'Individual feedback within 48 hours',
@@ -155,8 +156,9 @@ export const i18n = {
     },
     hero: {
       badge: 'PRUEBAS COMPETITIVAS BISA 2026–2027',
-      headline: 'DALE A TU HIJO LA OPORTUNIDAD QUE MERECE',
-      subheadline: 'Todo gran jugador empezó en algún lugar. BISA le da a tu hijo entrenamiento de élite, comentarios reales y un camino claro a seguir, aquí mismo en South Carolina.',
+      headlinePart1: 'LAS PRUEBAS YA',
+      headlinePart2: 'ESTÁN ABIERTAS',
+      subheadline: 'Entrenamiento de élite. Desarrollo real. Asegura tu lugar hoy.',
       hooks: [
         'Entrenadores expertos que realmente desarrollan a tu hijo, no solo lo hacen jugar',
         'Comentarios individuales en 48 horas',
@@ -303,8 +305,9 @@ export const i18n = {
     },
     hero: {
       badge: 'SELETIVAS COMPETITIVAS BISA 2026–2027',
-      headline: 'DÊ AO SEU FILHO A CHANCE QUE ELE MERECE',
-      subheadline: 'Todo grande jogador começou em algum lugar. A BISA oferece ao seu filho treinamento de elite, feedback real e um caminho claro a seguir — bem aqui na Carolina do Sul.',
+      headlinePart1: 'AS SELETIVAS',
+      headlinePart2: 'ESTÃO ABERTAS',
+      subheadline: 'Treinamento de elite. Desenvolvimento real. Garanta sua vaga hoje.',
       hooks: [
         'Treinadores especialistas que realmente desenvolvem seu filho — não apenas o colocam para jogar',
         'Feedback individual em 48 horas',

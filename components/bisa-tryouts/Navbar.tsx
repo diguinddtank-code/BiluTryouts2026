@@ -45,13 +45,14 @@ export function Navbar() {
               <button
                 key={lang}
                 onClick={() => setLanguage(lang)}
-                className={`px-3 py-1.5 text-xs sm:text-sm font-semibold rounded-full transition-all duration-200 ${
+                className={`w-10 h-10 flex items-center justify-center text-lg rounded-full transition-all duration-200 ${
                   language === lang
-                    ? 'bg-[#ccff00] text-[#0a1a0a] shadow-sm'
-                    : 'text-white/70 hover:text-white hover:bg-white/10'
+                    ? 'bg-[#ccff00] shadow-sm scale-110'
+                    : 'hover:bg-white/10 grayscale opacity-60 hover:opacity-100 hover:grayscale-0'
                 }`}
+                title={lang}
               >
-                {lang}
+                {lang === 'EN' ? '🇺🇸' : lang === 'ES' ? '🇪🇸' : '🇧🇷'}
               </button>
             ))}
           </div>

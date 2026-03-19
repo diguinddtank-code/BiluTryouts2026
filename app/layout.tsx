@@ -1,6 +1,18 @@
 import type {Metadata} from 'next';
-import {Montserrat, Outfit} from 'next/font/google';
+import {Montserrat, Outfit, Anton, Bebas_Neue} from 'next/font/google';
 import './globals.css';
+
+const anton = Anton({
+  subsets: ['latin'],
+  weight: ['400'],
+  variable: '--font-anton',
+});
+
+const bebasNeue = Bebas_Neue({
+  subsets: ['latin'],
+  weight: ['400'],
+  variable: '--font-bebas',
+});
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -21,7 +33,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
-    <html lang="en" className={`${montserrat.variable} ${outfit.variable} scroll-smooth`}>
+    <html lang="en" className={`${montserrat.variable} ${outfit.variable} ${anton.variable} ${bebasNeue.variable} scroll-smooth`}>
       <body className="font-outfit bg-[#0a1f14] text-white antialiased selection:bg-[#ccff00] selection:text-[#0a1f14]" suppressHydrationWarning>
         {children}
       </body>

@@ -49,10 +49,8 @@ export function Hero() {
     return () => clearInterval(timer);
   }, []);
 
-  const headlineWords = t.hero.headline.split(' ');
-
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center pt-28 pb-16 sm:pb-24 overflow-hidden">
+    <section className="relative min-h-screen flex flex-col items-center justify-center pt-20 sm:pt-28 pb-16 sm:pb-24 overflow-hidden">
       {/* Background Video */}
       <video 
         autoPlay 
@@ -67,53 +65,72 @@ export function Hero() {
       {/* Video Overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-[#0a1f14] via-[#0a1f14]/50 to-[#0a1f14] -z-10" />
 
+      {/* Massive Background Text */}
+      <div className="absolute inset-0 flex items-center justify-center overflow-hidden pointer-events-none -z-10 select-none">
+        <motion.span 
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 0.03, scale: 1 }}
+          transition={{ duration: 1.5, ease: "easeOut" }}
+          className="font-montserrat font-black text-[35vw] leading-none text-white whitespace-nowrap italic opacity-10"
+        >
+          BISA
+        </motion.span>
+      </div>
+
       {/* BISA Watermark Logo */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[60%] opacity-[0.07] pointer-events-none -z-10">
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[60%] opacity-[0.05] pointer-events-none -z-10">
         <Image
           src="https://bilusoccer.com/wp-content/uploads/2025/03/h2-3.png"
           alt=""
           width={340}
           height={340}
           unoptimized={true}
-          className="w-[220px] h-[220px] sm:w-[340px] sm:h-[340px] object-contain"
+          className="w-[200px] h-[200px] sm:w-[340px] sm:h-[340px] object-contain"
         />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center flex flex-col items-center flex-grow justify-center w-full">
         <motion.div
-          initial={{opacity: 0, y: 20}}
-          animate={{opacity: 1, y: 0}}
-          transition={{duration: 0.5}}
-          className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-black/60 backdrop-blur-sm border border-white/20 mb-6 sm:mb-8"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="flex flex-col items-center mb-4 sm:mb-6"
         >
-          <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse-dot" />
-          <span className="text-[11px] sm:text-[12px] font-medium text-white uppercase tracking-[0.08em]">
-            {t.hero.badge}
+          <span className="text-[10px] sm:text-[13px] font-montserrat font-bold text-white/60 uppercase tracking-[0.3em] mb-2">
+            BISA ACADEMY · EST. SOUTH CAROLINA
           </span>
+          <div className="w-10 h-[2px] bg-[#ccff00] rounded-full" />
         </motion.div>
 
-        <h1 
-          className="font-montserrat font-black uppercase leading-[0.9] mb-6 flex flex-wrap justify-center gap-x-3 gap-y-2 max-w-5xl text-white"
-          style={{ fontSize: 'clamp(2.8rem, 11vw, 7rem)', letterSpacing: '-0.02em' }}
-        >
-          {headlineWords.map((word, i) => (
+        <div className="relative mb-8 sm:mb-12 w-full">
+          <h1 
+            className="font-montserrat font-black uppercase leading-[0.8] flex flex-col items-center italic"
+            style={{ fontSize: 'clamp(3.2rem, 14vw, 11rem)', letterSpacing: '-0.05em' }}
+          >
             <motion.span
-              key={i}
-              initial={{opacity: 0, y: 40}}
-              animate={{opacity: 1, y: 0}}
-              transition={{duration: 0.5, delay: i * 0.1}}
-              className="inline-block"
+              initial={{ opacity: 0, x: -40 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.7, ease: "easeOut" }}
+              className="block text-white drop-shadow-2xl"
             >
-              {word}
+              {t.hero.headlinePart1}
             </motion.span>
-          ))}
-        </h1>
+            <motion.span
+              initial={{ opacity: 0, x: 40 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
+              className="block text-[#ccff00] drop-shadow-[0_0_30px_rgba(204,255,0,0.5)]"
+            >
+              {t.hero.headlinePart2}
+            </motion.span>
+          </h1>
+        </div>
 
         <motion.p
-          initial={{opacity: 0, y: 20}}
-          animate={{opacity: 1, y: 0}}
-          transition={{duration: 0.5, delay: 0.4}}
-          className="text-lg sm:text-2xl text-white/[0.78] max-w-3xl mx-auto mb-8 sm:mb-10 font-light leading-[1.65] drop-shadow-md"
+          initial={{opacity: 0}}
+          animate={{opacity: 1}}
+          transition={{duration: 0.8, delay: 0.6}}
+          className="text-xs sm:text-lg text-white/60 max-w-xl mx-auto mb-10 font-bold uppercase tracking-[0.2em] px-4"
         >
           {t.hero.subheadline}
         </motion.p>
@@ -122,7 +139,7 @@ export function Hero() {
           initial={{opacity: 0, y: 20}}
           animate={{opacity: 1, y: 0}}
           transition={{delay: 0.6, duration: 0.5, ease: "easeOut"}}
-          className="flex flex-col items-center gap-3 w-full max-w-md mx-auto mb-16"
+          className="flex flex-col items-center gap-3 w-full max-w-md mx-auto mb-10 sm:mb-16"
         >
           <motion.button
             onClick={() => document.getElementById('registration-section')?.scrollIntoView({ behavior: 'smooth' })}
@@ -141,7 +158,7 @@ export function Hero() {
           initial={{opacity: 0, y: 20}}
           animate={{opacity: 1, y: 0}}
           transition={{duration: 0.5, delay: 1}}
-          className="flex flex-col items-center mb-16"
+          className="flex flex-col items-center mb-8 sm:mb-16"
         >
           <span className="text-sm font-bold text-white/60 uppercase tracking-widest mb-4">{t.hero.tryoutsIn}</span>
           <div className="flex gap-3 sm:gap-6">

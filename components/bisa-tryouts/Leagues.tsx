@@ -25,7 +25,7 @@ export function Leagues() {
   const logos = [
     { type: 'image', src: 'https://bilusoccer.com/wp-content/uploads/2025/03/h2-3.png', alt: 'BISA' },
     { type: 'image', src: 'https://flosoccer.ottosport.ai/_files/tournaments-training/tournaments/usys_sc_statecup_tm_nodate_1c_blk.png', alt: 'SC State Cup' },
-    { type: 'image', src: 'https://lirp.cdn-website.com/09fbdaa3/dms3rep/multi/opt/scysa-640w.png', alt: 'SCYSA' },
+    { type: 'image', src: 'https://i.imgur.com/B6rzPN4.png', alt: 'SCYSA' },
     { type: 'text', text: 'US CLUB SOCCER' },
     { type: 'text', text: 'CPL' },
   ];
@@ -83,12 +83,12 @@ export function Leagues() {
           <motion.div variants={itemVariants} className="bg-white/5 backdrop-blur-md rounded-3xl p-8 sm:p-10 border border-white/10 hover:border-[#ccff00]/50 hover:bg-white/10 transition-all duration-300 flex flex-col items-center text-center">
             <div className="h-20 flex items-center justify-center mb-8 w-full">
               <Image
-                src="https://lirp.cdn-website.com/09fbdaa3/dms3rep/multi/opt/scysa-640w.png"
+                src="https://i.imgur.com/B6rzPN4.png"
                 alt="SCYSA"
                 width={120}
                 height={80}
                 unoptimized={true}
-                className="object-contain max-h-full brightness-0 invert opacity-100"
+                className="object-contain max-h-full opacity-100"
               />
             </div>
             <h3 className="font-montserrat font-bold text-xl tracking-[0.08em] uppercase mb-4 text-white">{t.leagues.cards[1].title}</h3>
@@ -129,7 +129,7 @@ export function Leagues() {
                     width={100}
                     height={40}
                     unoptimized={true}
-                    className="object-contain max-h-[40px] w-auto brightness-0 invert opacity-60 md:group-hover:opacity-100 transition-opacity duration-300"
+                    className={`object-contain max-h-[40px] w-auto opacity-70 md:group-hover:opacity-100 transition-opacity duration-300 ${item.alt === 'SC State Cup' ? 'brightness-0 invert' : ''}`}
                   />
                 ) : (
                   <span className="font-outfit font-black text-2xl tracking-tight text-white/60 md:group-hover:text-white transition-colors duration-300 whitespace-nowrap">
