@@ -50,7 +50,7 @@ export function Hero() {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center pt-20 sm:pt-28 pb-16 sm:pb-24 overflow-hidden">
+    <section className="relative min-h-screen flex flex-col items-center justify-center pt-20 sm:pt-28 md:pt-40 pb-16 sm:pb-24 overflow-hidden">
       {/* Background Video */}
       <video 
         autoPlay 
@@ -69,96 +69,107 @@ export function Hero() {
       <div className="absolute inset-0 flex items-center justify-center overflow-hidden pointer-events-none -z-10 select-none">
         <motion.span 
           initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 0.03, scale: 1 }}
+          animate={{ opacity: 0.02, scale: 1 }}
           transition={{ duration: 1.5, ease: "easeOut" }}
-          className="font-montserrat font-black text-[35vw] leading-none text-white whitespace-nowrap italic opacity-10"
+          className="font-montserrat font-black text-[30vw] md:text-[25vw] leading-none text-white whitespace-nowrap italic"
         >
           BISA
         </motion.span>
       </div>
 
       {/* BISA Watermark Logo */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[60%] opacity-[0.05] pointer-events-none -z-10">
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[60%] opacity-[0.02] pointer-events-none -z-10">
         <Image
           src="https://bilusoccer.com/wp-content/uploads/2025/03/h2-3.png"
           alt=""
-          width={340}
-          height={340}
+          width={400}
+          height={400}
           unoptimized={true}
-          className="w-[200px] h-[200px] sm:w-[340px] sm:h-[340px] object-contain"
+          className="w-[180px] h-[180px] sm:w-[300px] sm:h-[300px] object-contain"
         />
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center flex flex-col items-center flex-grow justify-center w-full">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center flex flex-col items-center flex-grow justify-center w-full pt-10 sm:pt-0">
+        {/* Top Academy Name */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="flex flex-col items-center mb-4 sm:mb-6"
+          className="flex flex-col items-center mb-8 sm:mb-12"
         >
-          <span className="text-[10px] sm:text-[13px] font-montserrat font-bold text-white/60 uppercase tracking-[0.3em] mb-2">
-            BISA ACADEMY · EST. SOUTH CAROLINA
+          <h2 className="font-montserrat font-black italic text-xl sm:text-2xl md:text-3xl text-white tracking-tight mb-1">
+            {t.hero.academyName}
+          </h2>
+          <span className="text-[9px] sm:text-[11px] font-montserrat font-bold text-white/60 uppercase tracking-[0.3em]">
+            {t.hero.academySub}
           </span>
-          <div className="w-10 h-[2px] bg-[#ccff00] rounded-full" />
         </motion.div>
 
-        <div className="relative mb-8 sm:mb-12 w-full">
+        {/* Main Headline */}
+        <div className="relative mb-8 sm:mb-12 w-full max-w-5xl mx-auto flex flex-col items-center">
           <h1 
-            className="font-montserrat font-black uppercase leading-[0.8] flex flex-col items-center italic"
-            style={{ fontSize: 'clamp(3.2rem, 14vw, 11rem)', letterSpacing: '-0.05em' }}
+            className="font-montserrat font-black uppercase leading-[0.85] flex flex-col items-center italic"
+            style={{ fontSize: 'clamp(3rem, 11vw, 8rem)', letterSpacing: '-0.04em' }}
           >
             <motion.span
-              initial={{ opacity: 0, x: -40 }}
-              animate={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, ease: "easeOut" }}
-              className="block text-white drop-shadow-2xl"
+              className="block text-white drop-shadow-2xl whitespace-nowrap"
             >
               {t.hero.headlinePart1}
             </motion.span>
             <motion.span
-              initial={{ opacity: 0, x: 40 }}
-              animate={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
-              className="block text-[#ccff00] drop-shadow-[0_0_30px_rgba(204,255,0,0.5)]"
+              className="block text-[#ccff00] drop-shadow-[0_0_30px_rgba(204,255,0,0.3)] whitespace-nowrap"
             >
               {t.hero.headlinePart2}
             </motion.span>
           </h1>
+          
+          {/* Neon Line */}
+          <motion.div 
+            initial={{ scaleX: 0 }}
+            animate={{ scaleX: 1 }}
+            transition={{ delay: 0.8, duration: 0.6 }}
+            className="w-12 sm:w-20 h-[2px] sm:h-[3px] bg-[#ccff00] mt-6 sm:mt-10 rounded-full shadow-[0_0_10px_rgba(204,255,0,0.5)] mx-auto"
+          />
         </div>
 
+        {/* Subtext */}
         <motion.p
           initial={{opacity: 0}}
           animate={{opacity: 1}}
-          transition={{duration: 0.8, delay: 0.6}}
-          className="text-xs sm:text-lg text-white/60 max-w-xl mx-auto mb-10 font-bold uppercase tracking-[0.2em] px-4"
+          transition={{duration: 0.8, delay: 1}}
+          className="text-sm sm:text-lg md:text-xl text-white/80 max-w-2xl mx-auto mb-10 sm:mb-16 font-medium leading-relaxed tracking-tight px-4"
         >
           {t.hero.subheadline}
         </motion.p>
 
+        {/* Action Button (Optional, keeping it but styling it subtly) */}
         <motion.div
           initial={{opacity: 0, y: 20}}
           animate={{opacity: 1, y: 0}}
-          transition={{delay: 0.6, duration: 0.5, ease: "easeOut"}}
-          className="flex flex-col items-center gap-3 w-full max-w-md mx-auto mb-10 sm:mb-16"
+          transition={{delay: 1.2, duration: 0.5}}
+          className="flex flex-col items-center gap-4"
         >
           <motion.button
             onClick={() => document.getElementById('registration-section')?.scrollIntoView({ behavior: 'smooth' })}
-            whileHover={{scale: 1.02, filter: "brightness(1.1)"}}
-            whileTap={{scale: 0.97}}
-            className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 min-h-[56px] font-montserrat font-extrabold text-[16px] uppercase tracking-[0.08em] text-[#0a1a0a] bg-[#ccff00] rounded-xl shadow-[0_4px_20px_rgba(204,255,0,0.3)] hover:shadow-[0_8px_30px_rgba(204,255,0,0.5)] transition-shadow"
+            whileHover={{scale: 1.05}}
+            whileTap={{scale: 0.95}}
+            className="px-8 py-4 sm:px-10 sm:py-5 bg-[#ccff00] text-[#0a1f14] font-montserrat font-black uppercase text-xs sm:text-sm tracking-widest rounded-xl shadow-[0_0_20px_rgba(204,255,0,0.2)] hover:shadow-[0_0_40px_rgba(204,255,0,0.4)] transition-all duration-300"
           >
             {t.hero.cta}
           </motion.button>
-          <span className="text-[12px] font-medium text-white/50">
-            {t.hero.microcopy}
-          </span>
         </motion.div>
 
         <motion.div
           initial={{opacity: 0, y: 20}}
           animate={{opacity: 1, y: 0}}
           transition={{duration: 0.5, delay: 1}}
-          className="flex flex-col items-center mb-8 sm:mb-16"
+          className="flex flex-col items-center mt-12 sm:mt-20 mb-8 sm:mb-16"
         >
           <span className="text-sm font-bold text-white/60 uppercase tracking-widest mb-4">{t.hero.tryoutsIn}</span>
           <div className="flex gap-3 sm:gap-6">

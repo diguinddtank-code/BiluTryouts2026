@@ -7,6 +7,8 @@ export const i18n = {
     },
     hero: {
       badge: 'BISA COMPETITIVE TRYOUTS 2026–2027',
+      academyName: 'BILU INTERNATIONAL',
+      academySub: 'SOCCER ACADEMY · EST. SOUTH CAROLINA',
       headlinePart1: 'TRYOUTS ARE',
       headlinePart2: 'NOW OPEN',
       subheadline: 'Elite coaching. Real development. Secure your spot today.',
@@ -156,6 +158,8 @@ export const i18n = {
     },
     hero: {
       badge: 'PRUEBAS COMPETITIVAS BISA 2026–2027',
+      academyName: 'BILU INTERNATIONAL',
+      academySub: 'SOCCER ACADEMY · EST. SOUTH CAROLINA',
       headlinePart1: 'LAS PRUEBAS YA',
       headlinePart2: 'ESTÁN ABIERTAS',
       subheadline: 'Entrenamiento de élite. Desarrollo real. Asegura tu lugar hoy.',
@@ -305,6 +309,8 @@ export const i18n = {
     },
     hero: {
       badge: 'SELETIVAS COMPETITIVAS BISA 2026–2027',
+      academyName: 'BILU INTERNATIONAL',
+      academySub: 'SOCCER ACADEMY · EST. SOUTH CAROLINA',
       headlinePart1: 'AS SELETIVAS',
       headlinePart2: 'ESTÃO ABERTAS',
       subheadline: 'Treinamento de elite. Desenvolvimento real. Garanta sua vaga hoje.',
