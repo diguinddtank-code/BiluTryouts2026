@@ -14,6 +14,13 @@ import {FAQ} from '@/components/bisa-tryouts/FAQ';
 import {RegistrationForm} from '@/components/bisa-tryouts/RegistrationForm';
 import {Footer} from '@/components/bisa-tryouts/Footer';
 
+// Scrollytelling Components
+import { ScrollProgress } from '@/components/scrollytelling/ScrollProgress';
+import { WorldLanguages } from '@/components/scrollytelling/WorldLanguages';
+import { AnimatedStats } from '@/components/scrollytelling/AnimatedStats';
+import { ProjetoBilu } from '@/components/scrollytelling/ProjetoBilu';
+import { EpicCta } from '@/components/scrollytelling/EpicCta';
+
 export default function Page() {
   useEffect(() => {
     // Force scroll to top on initial load to prevent browser from restoring scroll position
@@ -28,18 +35,31 @@ export default function Page() {
 
   return (
     <LanguageProvider>
-      <div className="min-h-screen flex flex-col font-outfit">
+      <div className="min-h-screen flex flex-col font-outfit bg-[#080808] text-[#F5F5F5] selection:bg-[#D0021B] selection:text-white overflow-x-hidden">
+        <ScrollProgress />
         <Navbar />
         <main className="flex-grow">
           <Hero />
-          <RegistrationForm />
+          
+          {/* Scrollytelling Narrative Starts Here */}
+          <WorldLanguages />
+          <AnimatedStats />
+          
           <About />
+          
+          <ProjetoBilu />
+          
           <LogoDivider />
           <Leagues />
           <LocationSchedule />
+          
           <Timeline />
           <Pillars />
           <FAQ />
+          
+          <RegistrationForm />
+          
+          <EpicCta />
         </main>
         <Footer />
       </div>

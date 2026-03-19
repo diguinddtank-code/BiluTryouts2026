@@ -57,13 +57,12 @@ export function Hero() {
         loop 
         muted 
         playsInline 
-        className="absolute inset-0 w-full h-full object-cover -z-20"
-      >
-        <source src="https://i.imgur.com/Mikmi09.mp4" type="video/mp4" />
-      </video>
+        src="https://i.imgur.com/Mikmi09.mp4"
+        className="absolute inset-0 w-full h-full object-cover -z-30"
+      />
       
-      {/* Video Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#0a1f14] via-[#0a1f14]/50 to-[#0a1f14] -z-10" />
+      {/* Video Overlay - Adjusted opacity to be less dark */}
+      <div className="absolute inset-0 bg-gradient-to-b from-[#0a1f14]/80 via-[#0a1f14]/40 to-[#0a1f14]/80 -z-20" />
 
       {/* Massive Background Text */}
       <div className="absolute inset-0 flex items-center justify-center overflow-hidden pointer-events-none -z-10 select-none">
