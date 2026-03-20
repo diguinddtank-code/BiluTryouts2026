@@ -96,13 +96,13 @@ export function Hero() {
         <div className="relative mb-8 sm:mb-12 w-full max-w-5xl mx-auto flex flex-col items-center">
           <h1 
             className="font-montserrat font-black uppercase leading-[0.85] flex flex-col items-center italic text-center"
-            style={{ fontSize: 'clamp(2.5rem, 10vw, 8rem)', letterSpacing: '-0.04em' }}
+            style={{ fontSize: 'clamp(2.75rem, 11.5vw, 8rem)', letterSpacing: '-0.04em' }}
           >
             <motion.span
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, ease: "easeOut" }}
-              className="block text-white drop-shadow-2xl"
+              className="block text-white drop-shadow-2xl whitespace-nowrap"
             >
               {t.hero.headlinePart1}
             </motion.span>
@@ -110,7 +110,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
-              className="block text-[#ccff00] drop-shadow-[0_0_30px_rgba(204,255,0,0.3)]"
+              className="block text-[#ccff00] drop-shadow-[0_0_30px_rgba(204,255,0,0.3)] whitespace-nowrap"
             >
               {t.hero.headlinePart2}
             </motion.span>
@@ -159,18 +159,18 @@ export function Hero() {
           className="flex flex-col items-center mt-12 sm:mt-20 mb-8 sm:mb-16"
         >
           <span className="text-sm font-bold text-white/60 uppercase tracking-widest mb-4">{t.hero.tryoutsIn}</span>
-          <div className="grid grid-cols-2 sm:flex sm:gap-6 gap-3">
+          <div className="flex justify-center gap-2 sm:gap-6 w-full px-2">
             {[
               {label: t.hero.days, value: timeLeft.days},
               {label: t.hero.hours, value: timeLeft.hours},
               {label: t.hero.minutes, value: timeLeft.minutes},
               {label: t.hero.seconds, value: timeLeft.seconds},
             ].map((item, i) => (
-              <div key={i} className="flex flex-col items-center bg-[#113321] border border-white/10 rounded-xl p-3 sm:p-4 min-w-[70px] sm:min-w-[90px]">
-                <div className="text-3xl sm:text-5xl font-montserrat font-black text-[#ccff00] tabular-nums tracking-tighter">
+              <div key={i} className="flex flex-col items-center bg-[#113321] border border-white/10 rounded-xl p-2 sm:p-4 min-w-[65px] sm:min-w-[90px] flex-1 max-w-[100px]">
+                <div className="text-2xl sm:text-5xl font-montserrat font-black text-[#ccff00] tabular-nums tracking-tighter">
                   {item.value.toString().padStart(2, '0')}
                 </div>
-                <div className="text-[10px] sm:text-xs font-bold text-white/50 tracking-widest mt-1 uppercase">
+                <div className="text-[9px] sm:text-xs font-bold text-white/50 tracking-widest mt-1 uppercase">
                   {item.label}
                 </div>
               </div>

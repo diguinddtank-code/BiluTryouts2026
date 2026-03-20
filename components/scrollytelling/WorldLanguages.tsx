@@ -8,7 +8,7 @@ import { useInView } from 'motion/react';
 
 function Counter({from, to, duration = 2}: {from: number; to: number; duration?: number}) {
   const ref = useRef(null);
-  const isInView = useInView(ref, {once: true, margin: '-100px'});
+  const isInView = useInView(ref, {once: true, margin: '0px'});
   const [count, setCount] = useState(from);
 
   useEffect(() => {
@@ -108,20 +108,23 @@ export function WorldLanguages() {
         </p>
 
         {/* Flag Marquees */}
-        <div className="w-full overflow-hidden flex flex-col gap-3 mb-16 opacity-80"
+        <div className="w-full overflow-hidden flex flex-col gap-4 mb-16 relative"
              style={{
-               opacity: isIntersecting ? 0.8 : 0,
+               opacity: isIntersecting ? 1 : 0,
                transform: isIntersecting ? 'translateY(0)' : 'translateY(20px)',
                transition: 'all 1s ease-out 400ms'
              }}>
-          <div className="flex whitespace-nowrap animate-marquee text-4xl sm:text-5xl">
+          {/* Add a subtle glow behind the flags */}
+          <div className="absolute left-0 right-0 top-1/2 -translate-y-1/2 h-32 bg-[#ccff00]/10 blur-[50px] -z-10 pointer-events-none" />
+          
+          <div className="flex whitespace-nowrap animate-marquee text-5xl sm:text-6xl py-2" style={{ animationDuration: '25s' }}>
             {[...flags1, ...flags1, ...flags1].map((flag, i) => (
-              <span key={i} className="mx-4 drop-shadow-md">{flag}</span>
+              <span key={i} className="mx-4 sm:mx-6 drop-shadow-[0_0_15px_rgba(255,255,255,0.4)] hover:scale-125 transition-transform duration-300 cursor-default inline-block">{flag}</span>
             ))}
           </div>
-          <div className="flex whitespace-nowrap animate-marquee text-4xl sm:text-5xl" style={{ animationDirection: 'reverse', animationDuration: '120s' }}>
+          <div className="flex whitespace-nowrap animate-marquee text-5xl sm:text-6xl py-2" style={{ animationDirection: 'reverse', animationDuration: '30s' }}>
             {[...flags2, ...flags2, ...flags2].map((flag, i) => (
-              <span key={i} className="mx-4 drop-shadow-md">{flag}</span>
+              <span key={i} className="mx-4 sm:mx-6 drop-shadow-[0_0_15px_rgba(255,255,255,0.4)] hover:scale-125 transition-transform duration-300 cursor-default inline-block">{flag}</span>
             ))}
           </div>
         </div>
