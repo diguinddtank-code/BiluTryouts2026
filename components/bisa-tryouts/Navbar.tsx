@@ -43,16 +43,24 @@ export function Navbar() {
               <button
                 key={lang}
                 onClick={() => setLanguage(lang)}
-                className={`px-2 py-1.5 sm:px-4 sm:py-2 rounded-md font-montserrat font-bold text-[9px] sm:text-[12px] tracking-widest transition-all duration-200 border flex items-center ${
+                className={`px-2 py-1.5 sm:px-4 sm:py-2 rounded-md font-montserrat font-bold text-[9px] sm:text-[12px] tracking-widest transition-all duration-200 border flex items-center gap-2 ${
                   language === lang
                     ? 'bg-[#ccff00] text-[#0a1f14] border-[#ccff00]'
                     : 'bg-transparent text-white/40 border-white/10 hover:border-white/30 hover:text-white'
                 }`}
               >
-                <span className="uppercase flex items-center justify-center">
-                  <span className="text-[10px] sm:text-[12px] leading-none">
-                    {lang}
-                  </span>
+                <div className="relative w-4 h-3 sm:w-5 sm:h-4 overflow-hidden rounded-[1px]">
+                  <Image
+                    src={lang === 'EN' ? 'https://flagcdn.com/w40/us.png' : lang === 'ES' ? 'https://flagcdn.com/w40/es.png' : 'https://flagcdn.com/w40/br.png'}
+                    alt={`${lang} Flag`}
+                    fill
+                    className="object-cover"
+                    unoptimized={true}
+                    referrerPolicy="no-referrer"
+                  />
+                </div>
+                <span className="uppercase leading-none">
+                  {lang}
                 </span>
               </button>
             ))}
