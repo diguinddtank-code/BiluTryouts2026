@@ -31,7 +31,7 @@ export function Footer() {
             />
           </div>
           <h2 className="font-outfit font-black text-2xl sm:text-3xl tracking-[0.08em] text-white uppercase group-hover:text-[#ccff00] transition-colors duration-300">
-            BILU International Soccer Academy
+            Bilu International Soccer Academy
           </h2>
         </motion.div>
 

@@ -3,11 +3,11 @@ export type Language = 'EN' | 'ES' | 'PT';
 export const i18n = {
   EN: {
     nav: {
-      title: 'BILU International Soccer Academy',
+      title: 'Bilu International Soccer Academy',
     },
     hero: {
       badge: 'BISA COMPETITIVE TRYOUTS 2026–2027',
-      academyName: 'BILU INTERNATIONAL',
+      academyName: 'Bilu International',
       academySub: 'SOCCER ACADEMY · EST. SOUTH CAROLINA',
       headlinePart1: 'TRYOUTS ARE',
       headlinePart2: 'NOW OPEN',
@@ -43,7 +43,7 @@ export const i18n = {
         cpl: 'Carolina Premier League',
         sc: 'South Carolina based',
       },
-      paragraph: 'BILU International Soccer Academy is built on global experience. Led by Sports Director Paulo, who has trained athletes from over 19 countries, BISA brings world-class methodology to the Metro Charleston Area. We develop players of all ages — technically, tactically, and as people.',
+      paragraph: 'Bilu International Soccer Academy is built on global experience. Led by Sports Director Paulo, who has trained athletes from over 19 countries, BISA brings world-class methodology to the Metro Charleston Area. We develop players of all ages — technically, tactically, and as people.',
     },
     leagues: {
       headline: 'Where We Compete',
@@ -82,7 +82,7 @@ export const i18n = {
       ],
     },
     pillars: {
-      headline: 'Why BILU International?',
+      headline: 'Why Bilu International?',
       cards: [
         {
           title: 'GLOBAL METHODOLOGY',
@@ -147,7 +147,7 @@ export const i18n = {
       redirectUrgency: "Spots are filling fast — limited per age group",
     },
     footer: {
-      copyright: '© 2026 BILU International Soccer Academy · Ladson, South Carolina',
+      copyright: '© 2026 Bilu International Soccer Academy · Ladson, South Carolina',
       affiliate: 'SC Youth Soccer Affiliate',
     },
     testimonials: {
@@ -185,12 +185,12 @@ export const i18n = {
       label: 'EVERYONE IS WELCOME HERE',
       headline1: 'THE WORLD',
       headline2: 'TRAINS HERE',
-      sub: 'Our athletes come from over 19 countries. Portuguese, English, Spanish, French, Creole, and more. Soccer is the only language that matters.',
+      sub: 'USA, Brazil, Morocco, South Africa, Australia, Mexico, Colombia, Ecuador, Honduras, Guatemala, and beyond — our pitch is home to athletes from over 19 nations. Soccer is the only language that matters.',
     },
     projetoBilu: {
       label: 'BEYOND THE PITCH',
       title1: 'PROJETO',
-      title2: 'BILU',
+      title2: 'Bilu',
       sub: 'Soccer is our tool. Changing lives is our mission.',
       stats: [
         { label: 'Countries with Hubs', value: 10 },
@@ -199,16 +199,16 @@ export const i18n = {
         { label: 'Hubs in Brazil', value: 17 }
       ],
       quote: "We don't just develop players. We develop human beings.",
-      attribution: '— BILU International Soccer Academy'
+      attribution: '— Bilu International Soccer Academy'
     },
     originTimeline: {
       sectionTitle1: 'THE STORY',
-      sectionTitle2: 'OF BILU',
+      sectionTitle2: 'OF Bilu',
       milestones: [
-        { label: '2015 · THE BEGINNING', title: 'THE BEGINNING', body: 'BILU was born from a simple idea — that soccer could be a bridge between cultures, languages, and borders.' },
+        { label: '2015 · THE BEGINNING', title: 'THE BEGINNING', body: 'Bilu was born from a simple idea — that soccer could be a bridge between cultures, languages, and borders.' },
         { label: '2018 · GOING GLOBAL', title: 'GOING GLOBAL', body: 'What started in one country quickly became a movement. Athletes from across the Americas found a home on our pitch.' },
-        { label: '2020 · PROJETO BILU IS BORN', title: 'PROJETO BILU IS BORN', body: 'We realized our responsibility extended beyond the game. The Projeto BILU was created to bring soccer to children who needed it most — in 10 countries and counting.' },
-        { label: '2024 · MLS NEXT & BEYOND', title: 'MLS NEXT & BEYOND', body: 'Today, BILU competes at the highest levels of youth soccer in the United States — while never forgetting where we came from.' }
+        { label: '2020 · PROJETO Bilu IS BORN', title: 'PROJETO Bilu IS BORN', body: 'We realized our responsibility extended beyond the game. The Projeto Bilu was created to bring soccer to children who needed it most — in 10 countries and counting.' },
+        { label: '2024 · MLS NEXT & BEYOND', title: 'MLS NEXT & BEYOND', body: 'Today, Bilu competes at the highest levels of youth soccer in the United States — while never forgetting where we came from.' }
       ]
     },
     epicCta: {
@@ -220,11 +220,11 @@ export const i18n = {
   },
   ES: {
     nav: {
-      title: 'BILU International Soccer Academy',
+      title: 'Bilu International Soccer Academy',
     },
     hero: {
       badge: 'PRUEBAS COMPETITIVAS BISA 2026–2027',
-      academyName: 'BILU INTERNATIONAL',
+      academyName: 'Bilu International',
       academySub: 'SOCCER ACADEMY · EST. SOUTH CAROLINA',
       headlinePart1: 'LAS PRUEBAS YA',
       headlinePart2: 'ESTÁN ABIERTAS',
@@ -260,7 +260,7 @@ export const i18n = {
         cpl: 'Carolina Premier League',
         sc: 'Basado en South Carolina',
       },
-      paragraph: 'BILU International Soccer Academy se basa en experiencia global. Dirigida por el Director Deportivo Paulo, quien ha entrenado atletas de más de 19 países, BISA trae una metodología de clase mundial al área metropolitana de Charleston. Desarrollamos jugadores de todas las edades: técnica, táctica y personalmente.',
+      paragraph: 'Bilu International Soccer Academy se basa en experiencia global. Dirigida por el Director Deportivo Paulo, quien ha entrenado atletas de más de 19 países, BISA trae una metodología de clase mundial al área metropolitana de Charleston. Desarrollamos jugadores de todas las edades: técnica, táctica y personalmente.',
     },
     leagues: {
       headline: 'Dónde Competimos',
@@ -299,7 +299,7 @@ export const i18n = {
       ],
     },
     pillars: {
-      headline: '¿Por qué BILU International?',
+      headline: '¿Por qué Bilu International?',
       cards: [
         {
           title: 'METODOLOGÍA GLOBAL',
@@ -364,7 +364,7 @@ export const i18n = {
       redirectUrgency: 'Los cupos son limitados por grupo de edad — no esperes',
     },
     footer: {
-      copyright: '© 2026 BILU International Soccer Academy · Ladson, South Carolina',
+      copyright: '© 2026 Bilu International Soccer Academy · Ladson, South Carolina',
       affiliate: 'Afiliado a SC Youth Soccer',
     },
     testimonials: {
@@ -402,12 +402,12 @@ export const i18n = {
       label: 'TODOS SON BIENVENIDOS AQUÍ',
       headline1: 'EL MUNDO',
       headline2: 'ENTRENA AQUÍ',
-      sub: 'Nuestros atletas provienen de más de 19 países. El fútbol es el único idioma que importa.',
+      sub: 'EE. UU., Brasil, Marruecos, Sudáfrica, Australia, México, Colombia, Ecuador, Honduras, Guatemala y más allá — nuestra cancha es el hogar de atletas de más de 19 naciones. El fútbol es el único idioma que importa.',
     },
     projetoBilu: {
       label: 'MÁS ALLÁ DE LA CANCHA',
       title1: 'PROYECTO',
-      title2: 'BILU',
+      title2: 'Bilu',
       sub: 'El fútbol es nuestra herramienta. Cambiar vidas es nuestra misión.',
       stats: [
         { label: 'Países con Núcleos', value: 10 },
@@ -416,16 +416,16 @@ export const i18n = {
         { label: 'Núcleos en Brasil', value: 17 }
       ],
       quote: "No solo desarrollamos jugadores. Desarrollamos seres humanos.",
-      attribution: '— BILU International Soccer Academy'
+      attribution: '— Bilu International Soccer Academy'
     },
     originTimeline: {
       sectionTitle1: 'LA HISTORIA',
-      sectionTitle2: 'DE BILU',
+      sectionTitle2: 'DE Bilu',
       milestones: [
-        { label: '2015 · EL COMIENZO', title: 'EL COMIENZO', body: 'BILU nació de una idea simple: que el fútbol podría ser un puente entre culturas, idiomas y fronteras.' },
+        { label: '2015 · EL COMIENZO', title: 'EL COMIENZO', body: 'Bilu nació de una idea simple: que el fútbol podría ser un puente entre culturas, idiomas y fronteras.' },
         { label: '2018 · GLOBALIZACIÓN', title: 'GLOBALIZACIÓN', body: 'Lo que comenzó en un país se convirtió rápidamente en un movimiento. Atletas de todas las Américas encontraron un hogar en nuestra cancha.' },
-        { label: '2020 · NACE PROYECTO BILU', title: 'NACE PROYECTO BILU', body: 'Nos dimos cuenta de que nuestra responsabilidad se extendía más allá del juego. El Proyecto BILU fue created para llevar el fútbol a los niños que más lo necesitaban, en 10 países y contando.' },
-        { label: '2024 · MLS NEXT Y MÁS ALLÁ', title: 'MLS NEXT Y MÁS ALLÁ', body: 'Hoy, BILU compite en los niveles más altos del fútbol juvenil en los Estados Unidos, sin olvidar nunca de dónde venimos.' }
+        { label: '2020 · NACE PROYECTO Bilu', title: 'NACE PROYECTO Bilu', body: 'Nos dimos cuenta de que nuestra responsabilidad se extendía más allá del juego. El Proyecto Bilu fue created para llevar el fútbol a los niños que más lo necesitaban, en 10 países y contando.' },
+        { label: '2024 · MLS NEXT Y MÁS ALLÁ', title: 'MLS NEXT Y MÁS ALLÁ', body: 'Hoy, Bilu compite en los niveles más altos del fútbol juvenil en los Estados Unidos, sin olvidar nunca de dónde venimos.' }
       ]
     },
     epicCta: {
@@ -437,11 +437,11 @@ export const i18n = {
   },
   PT: {
     nav: {
-      title: 'BILU International Soccer Academy',
+      title: 'Bilu International Soccer Academy',
     },
     hero: {
       badge: 'SELETIVAS COMPETITIVAS BISA 2026–2027',
-      academyName: 'BILU INTERNATIONAL',
+      academyName: 'Bilu International',
       academySub: 'SOCCER ACADEMY · EST. SOUTH CAROLINA',
       headlinePart1: 'AS SELETIVAS',
       headlinePart2: 'ESTÃO ABERTAS',
@@ -477,7 +477,7 @@ export const i18n = {
         cpl: 'Carolina Premier League',
         sc: 'Sediado na Carolina do Sul',
       },
-      paragraph: 'A BILU International Soccer Academy é construída com experiência global. Liderada pelo Diretor Esportivo Paulo, que treinou atletas de mais de 19 países, a BISA traz uma metodologia de classe mundial para a região metropolitana de Charleston. Desenvolvemos jogadores de todas as idades — técnica, tática e pessoalmente.',
+      paragraph: 'A Bilu International Soccer Academy é construída com experiência global. Liderada pelo Diretor Esportivo Paulo, que treinou atletas de mais de 19 países, a BISA traz uma metodologia de classe mundial para a região metropolitana de Charleston. Desenvolvemos jogadores de todas as idades — técnica, tática e pessoalmente.',
     },
     leagues: {
       headline: 'Onde Competimos',
@@ -516,7 +516,7 @@ export const i18n = {
       ],
     },
     pillars: {
-      headline: 'Por que a BILU International?',
+      headline: 'Por que a Bilu International?',
       cards: [
         {
           title: 'METODOLOGIA GLOBAL',
@@ -581,7 +581,7 @@ export const i18n = {
       redirectUrgency: 'As vagas são limitadas por faixa etária — não espere',
     },
     footer: {
-      copyright: '© 2026 BILU International Soccer Academy · Ladson, Carolina do Sul',
+      copyright: '© 2026 Bilu International Soccer Academy · Ladson, Carolina do Sul',
       affiliate: 'Afiliado ao SC Youth Soccer',
     },
     testimonials: {
@@ -619,30 +619,30 @@ export const i18n = {
       label: 'TODOS SÃO BEM-VINDOS AQUI',
       headline1: 'O MUNDO',
       headline2: 'TREINA AQUI',
-      sub: 'Nossos atletas vêm de mais de 19 países. O futebol é o único idioma que importa.',
+      sub: 'EUA, Brasil, Marrocos, África do Sul, Austrália, México, Colômbia, Equador, Honduras, Guatemala e muito mais — nosso campo é a casa de atletas de mais de 19 nações. O futebol é o único idioma que importa.',
     },
     projetoBilu: {
       label: 'ALÉM DO CAMPO',
       title1: 'PROJETO',
-      title2: 'BILU',
+      title2: 'Bilu',
       sub: 'O futebol é nossa ferramenta. Mudar vidas é nossa missão.',
       stats: [
         { label: 'Países com Núcleos', value: 10 },
-        { label: 'Países Alcançados', value: 23 },
+        { label: 'Países Alcanzados', value: 23 },
         { label: 'Voluntários no Brasil', value: 153 },
         { label: 'Núcleos no Brasil', value: 17 }
       ],
       quote: "Não desenvolvemos apenas jogadores. Desenvolvemos seres humanos.",
-      attribution: '— BILU International Soccer Academy'
+      attribution: '— Bilu International Soccer Academy'
     },
     originTimeline: {
       sectionTitle1: 'A HISTÓRIA',
-      sectionTitle2: 'DA BILU',
+      sectionTitle2: 'DA Bilu',
       milestones: [
-        { label: '2015 · O COMEÇO', title: 'O COMEÇO', body: 'A BILU nasceu de uma ideia simples: que o futebol poderia ser uma ponte entre culturas, idiomas e fronteiras.' },
+        { label: '2015 · O COMEÇO', title: 'O COMEÇO', body: 'A Bilu nasceu de uma ideia simples: que o futebol poderia ser uma ponte entre culturas, idiomas e fronteiras.' },
         { label: '2018 · GLOBALIZAÇÃO', title: 'GLOBALIZAÇÃO', body: 'O que começou em um país rapidamente se tornou um movimento. Atletas de todas as Américas encontraram um lar em nosso campo.' },
-        { label: '2020 · NASCE O PROJETO BILU', title: 'NASCE O PROJETO BILU', body: 'Percebemos que nossa responsabilidade se estendia além do jogo. El Projeto BILU foi criado para levar o futebol às crianças que mais precisavam, em 10 países e contando.' },
-        { label: '2024 · MLS NEXT E ALÉM', title: 'MLS NEXT E ALÉM', body: 'Hoje, a BILU compete nos níveis mais altos do futebol juvenil nos Estados Unidos, sem nunca esquecer de onde viemos.' }
+        { label: '2020 · NASCE O PROJETO Bilu', title: 'NASCE O PROJETO Bilu', body: 'Percebemos que nossa responsabilidade se estendia além do jogo. El Projeto Bilu foi criado para levar o futebol às crianças que mais precisavam, em 10 países e contando.' },
+        { label: '2024 · MLS NEXT E ALÉM', title: 'MLS NEXT E ALÉM', body: 'Hoje, a Bilu compete nos níveis mais altos do futebol juvenil nos Estados Unidos, sem nunca esquecer de onde viemos.' }
       ]
     },
     epicCta: {

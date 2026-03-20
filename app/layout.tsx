@@ -28,7 +28,7 @@ const outfit = Outfit({
 
 export const metadata: Metadata = {
   title: 'BISA Tryouts | South Carolina',
-  description: 'BILU International Soccer Academy is now accepting athletes for all age groups. Elite coaching. Real development. Your future starts here.',
+  description: 'Bilu International Soccer Academy is now accepting athletes for all age groups. Elite coaching. Real development. Your future starts here.',
 };
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
