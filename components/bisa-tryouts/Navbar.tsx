@@ -49,13 +49,9 @@ export function Navbar() {
                     : 'bg-transparent text-white/40 border-white/10 hover:border-white/30 hover:text-white'
                 }`}
               >
-                <span className="uppercase flex items-center gap-1.5">
-                  <span className="text-[14px] leading-none">
+                <span className="uppercase flex items-center justify-center">
+                  <span className="text-[16px] leading-none">
                     {lang === 'EN' ? '🇺🇸' : lang === 'ES' ? '🇪🇸' : '🇧🇷'}
-                  </span>
-                  <span className="sm:hidden">{lang}</span>
-                  <span className="hidden sm:inline">
-                    {lang === 'EN' ? 'US EN' : lang === 'ES' ? 'ES ES' : 'BR PT'}
                   </span>
                 </span>
               </button>

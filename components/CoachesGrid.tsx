@@ -9,23 +9,23 @@ export function CoachesGrid() {
     role: 'Sports Director',
     photo: 'https://i.imgur.com/2yYRzpU.png',
     bio: 'Former professional player with over 15 years of international coaching experience. Dedicated to developing elite youth talent.',
-    badges: ['UEFA A License', 'Global Experience']
+    badges: ['National D License', 'Global Experience']
   };
 
   const staffCoaches = [
     {
       name: 'Manuel Luxgonzalez',
-      role: 'Certified Staff',
+      role: 'Licensed Staff',
       photo: 'https://i.imgur.com/WSvSZ4c.png',
     },
     {
       name: 'Paulo Oliveira',
-      role: 'Certified Staff',
+      role: 'Licensed Staff',
       photo: 'https://i.imgur.com/uy6yZxm.png',
     },
     {
       name: 'Tony Leal',
-      role: 'Certified Staff',
+      role: 'Licensed Staff',
       photo: 'https://i.imgur.com/trDxKdC.png',
     },
   ];
@@ -44,12 +44,12 @@ export function CoachesGrid() {
             // OUR COACHING STAFF
           </span>
           <h2 className="font-montserrat font-black text-[clamp(2.5rem,7vw,5.5rem)] leading-[0.85] tracking-tighter uppercase text-white mb-8 italic drop-shadow-2xl flex flex-col items-center">
-            <span className="block">NATIONALLY CERTIFIED.</span>
+            <span className="block">NATIONALLY LICENSED.</span>
             <span className="block text-[#ccff00] drop-shadow-[0_0_30px_rgba(204,255,0,0.3)]">GLOBALLY EXPERIENCED.</span>
           </h2>
           <div className="w-16 h-1 bg-[#ccff00] rounded-full shadow-[0_0_10px_rgba(204,255,0,0.5)] mx-auto mb-8"></div>
           <p className="text-lg sm:text-xl text-white/70 font-light leading-relaxed max-w-3xl mx-auto">
-            Every BISA coach holds national certifications and shares a unified philosophy of player development.
+            Every BISA coach holds national licenses and shares a unified philosophy of player development.
           </p>
         </motion.div>
 

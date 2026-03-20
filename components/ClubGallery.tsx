@@ -23,16 +23,11 @@ export function ClubGallery() {
     {
       src: 'https://i.imgur.com/9rU8PaI.jpeg',
       alt: 'Team photo',
-      className: 'col-span-2 row-span-1 sm:col-span-2 sm:row-span-1',
+      className: 'col-span-1 row-span-1 sm:col-span-1 sm:row-span-1',
     },
     {
       src: 'https://i.imgur.com/1UAUWpN.jpeg',
       alt: 'Action shot 2',
-      className: 'col-span-1 row-span-1 sm:col-span-1 sm:row-span-1',
-    },
-    {
-      src: 'https://i.imgur.com/3DJsUvI.jpeg',
-      alt: 'Boys with flags 2',
       className: 'col-span-1 row-span-1 sm:col-span-1 sm:row-span-1',
     },
   ];

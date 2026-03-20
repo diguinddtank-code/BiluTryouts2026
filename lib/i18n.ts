@@ -76,7 +76,7 @@ export const i18n = {
       intro: "Here's exactly what your child will experience on tryout day — so you can feel confident about every step.",
       steps: [
         { title: 'ARRIVE', desc: 'Check in at the gym entrance 10 min before your slot.' },
-        { title: 'WARM UP', desc: 'Structured warm-up led by BISA certified coaches.' },
+        { title: 'WARM UP', desc: 'Structured warm-up led by BISA licensed coaches.' },
         { title: 'EVALUATION', desc: 'Technical skills, tactical awareness, and scrimmage assessed individually.' },
         { title: 'NEXT STEPS', desc: 'Feedback and results within 48 hours by email.' },
       ],
@@ -131,7 +131,7 @@ export const i18n = {
         },
         {
           q: 'Who will be coaching the evaluation?',
-          a: 'BISA coaches led by Sports Director Paulo (PC), alongside our staff of 6 nationally certified coaches.',
+          a: 'BISA coaches led by Sports Director Paulo (PC), alongside our staff of 6 nationally licensed coaches.',
         },
       ],
     },
@@ -301,7 +301,7 @@ export const i18n = {
       intro: 'Esto es exactamente lo que tu hijo experimentará el día de la prueba, para que te sientas seguro en cada paso.',
       steps: [
         { title: 'LLEGAR', desc: 'Regístrate en la entrada del gimnasio 10 min antes de tu turno.' },
-        { title: 'CALENTAMIENTO', desc: 'Calentamiento estructurado dirigido por entrenadores certificados de BISA.' },
+        { title: 'CALENTAMIENTO', desc: 'Calentamiento estructurado dirigido por entrenadores licenciados de BISA.' },
         { title: 'EVALUACIÓN', desc: 'Habilidades técnicas, conciencia táctica y partido evaluados individualmente.' },
         { title: 'PRÓXIMOS PASOS', desc: 'Comentarios y resultados en 48 horas por correo electrónico.' },
       ],
@@ -356,7 +356,7 @@ export const i18n = {
         },
         {
           q: '¿Quién estará a cargo de la evaluación?',
-          a: 'Entrenadores de BISA dirigidos por el Director Deportivo Paulo (PC), junto con nuestro personal de 6 entrenadores certificados a nivel nacional.',
+          a: 'Entrenadores de BISA dirigidos por el Director Deportivo Paulo (PC), junto con nuestro personal de 6 entrenadores licenciados a nivel nacional.',
         },
       ],
     },
@@ -526,7 +526,7 @@ export const i18n = {
       intro: 'Aqui está exatamente o que seu filho experimentará no dia da seletiva — para que você se sinta seguro em cada etapa.',
       steps: [
         { title: 'CHEGADA', desc: 'Apresente-se na entrada do ginásio 10 min antes do seu horário.' },
-        { title: 'AQUECIMENTO', desc: 'Aquecimento estruturado liderado por treinadores certificados da BISA.' },
+        { title: 'AQUECIMENTO', desc: 'Aquecimento estruturado liderado por treinadores licenciados da BISA.' },
         { title: 'AVALIAÇÃO', desc: 'Habilidades técnicas, consciência tática e jogo avaliados individualmente.' },
         { title: 'PRÓXIMOS PASSOS', desc: 'Feedback e resultados em até 48 horas por e-mail.' },
       ],
@@ -581,7 +581,7 @@ export const i18n = {
         },
         {
           q: 'Quem estará avaliando?',
-          a: 'Treinadores da BISA liderados pelo Diretor Esportivo Paulo (PC), juntamente com nossa equipe de 6 treinadores certificados nacionalmente.',
+          a: 'Treinadores da BISA liderados pelo Diretor Esportivo Paulo (PC), juntamente com nossa equipe de 6 treinadores licenciados nacionalmente.',
         },
       ],
     },
