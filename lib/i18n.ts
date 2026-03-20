@@ -15,9 +15,9 @@ export const i18n = {
       hooks: [
         'Expert coaches who truly develop your child — not just play them',
         'Individual feedback within 48 hours',
-        'No pressure. No cost. Just a real opportunity.'
+        'No pressure. Just a real opportunity.'
       ],
-      pills: ['Ages U7–U19', 'Boys & Girls', 'Free to Register'],
+      pills: ['Ages U7–U19', 'Boys & Girls'],
       cta: 'REGISTER MY CHILD NOW →',
       microcopy: 'Secure your spot today · Limited availability',
       secondaryLink: '↓ See Schedule & Location',
@@ -110,20 +110,12 @@ export const i18n = {
       headline: 'Questions?',
       items: [
         {
-          q: 'How much does it cost to try out?',
-          a: 'Registration is completely free. There is no commitment or fee to apply. However, if selected for a team, club fees and payment plans will be detailed in your offer letter via PlayMetrics.',
-        },
-        {
           q: 'What age groups can participate?',
           a: 'BISA accepts players from U7 through U19, boys and girls.',
         },
         {
           q: 'What should my child bring?',
           a: 'Soccer cleats, shin guards, a ball, water, and arrive 10 minutes early.',
-        },
-        {
-          q: 'Is this indoors or outdoors?',
-          a: 'Tryouts will be held at Sangaree Middle School Gym — indoor facility.',
         },
         {
           q: 'What happens after tryouts?',
@@ -141,7 +133,7 @@ export const i18n = {
       step1Title: 'CLICK THE BUTTON BELOW',
       step1Desc: 'Tap the button to access our official registration platform.',
       step2Title: 'CREATE YOUR PLAYMETRICS ACCOUNT',
-      step2Desc: 'Set up your free PlayMetrics account with your email. Takes 30 seconds.',
+      step2Desc: 'Set up your PlayMetrics account with your email. Takes 30 seconds.',
       step3Title: 'COMPLETE REGISTRATION',
       step3Desc: "Fill in your child's info and complete the registration. You'll receive a confirmation email immediately.",
       trustStrip: [
@@ -240,9 +232,9 @@ export const i18n = {
       hooks: [
         'Entrenadores expertos que realmente desarrollan a tu hijo, no solo lo hacen jugar',
         'Comentarios individuales en 48 horas',
-        'Sin presión. Sin costo. Solo una oportunidad real.'
+        'Sin presión. Solo una oportunidad real.'
       ],
-      pills: ['Edades U7–U19', 'Niños y Niñas', 'Registro Gratuito'],
+      pills: ['Edades U7–U19', 'Niños y Niñas'],
       cta: 'REGISTRAR A MI HIJO AHORA →',
       microcopy: 'Asegura tu lugar hoy · Disponibilidad limitada',
       secondaryLink: '↓ Ver Horario y Ubicación',
@@ -335,20 +327,12 @@ export const i18n = {
       headline: '¿Preguntas?',
       items: [
         {
-          q: '¿Cuánto cuesta hacer la prueba?',
-          a: 'El registro es completamente gratuito. No hay compromiso ni tarifa para aplicar. Sin embargo, si es seleccionado para un equipo, las tarifas del club y los planes de pago se detallarán en su carta de oferta a través de PlayMetrics.',
-        },
-        {
           q: '¿Qué grupos de edad pueden participar?',
           a: 'BISA acepta jugadores desde U7 hasta U19, niños y niñas.',
         },
         {
           q: '¿Qué debe traer mi hijo/a?',
           a: 'Zapatos de fútbol, espinilleras, un balón, agua y llegar 10 minutos antes.',
-        },
-        {
-          q: '¿Es esto en interiores o exteriores?',
-          a: 'Las pruebas se llevarán a cabo en el gimnasio de Sangaree Middle School — instalación cubierta.',
         },
         {
           q: '¿Qué pasa después de las pruebas?',
@@ -366,7 +350,7 @@ export const i18n = {
       step1Title: 'HAZ CLIC EN EL BOTÓN DE ABAJO',
       step1Desc: 'Toca el botón para acceder a nuestra plataforma de registro oficial.',
       step2Title: 'CREA TU CUENTA EN PLAYMETRICS',
-      step2Desc: 'Configura tu cuenta gratuita de PlayMetrics con tu correo. Toma 30 segundos.',
+      step2Desc: 'Configura tu cuenta de PlayMetrics con tu correo. Toma 30 segundos.',
       step3Title: 'COMPLETA EL REGISTRO',
       step3Desc: 'Ingresa la información de tu hijo y completa el registro. Recibirás un correo de confirmación de inmediato.',
       trustStrip: [
@@ -465,9 +449,9 @@ export const i18n = {
       hooks: [
         'Treinadores especialistas que realmente desenvolvem seu filho — não apenas o colocam para jogar',
         'Feedback individual em 48 horas',
-        'Sem pressão. Sem custo. Apenas uma oportunidade real.'
+        'Sem pressão. Apenas uma oportunidade real.'
       ],
-      pills: ['Idades U7–U19', 'Meninos e Meninas', 'Inscrição Gratuita'],
+      pills: ['Idades U7–U19', 'Meninos e Meninas'],
       cta: 'INSCREVER MEU FILHO AGORA →',
       microcopy: 'Garanta sua vaga hoje · Disponibilidade limitada',
       secondaryLink: '↓ Ver Horário e Local',
@@ -560,20 +544,12 @@ export const i18n = {
       headline: 'Perguntas?',
       items: [
         {
-          q: 'Quanto custa para participar da seletiva?',
-          a: 'A inscrição é totalmente gratuita. Não há compromisso ou taxa para se candidatar. No entanto, se selecionado para uma equipe, as taxas do clube e os planos de pagamento serão detalhados em sua carta de oferta via PlayMetrics.',
-        },
-        {
           q: 'Quais faixas etárias podem participar?',
           a: 'A BISA aceita jogadores do U7 ao U19, meninos e meninas.',
         },
         {
           q: 'O que meu filho(a) deve levar?',
           a: 'Chuteiras, caneleiras, uma bola, água e chegar 10 minutos antes.',
-        },
-        {
-          q: 'É em local coberto ou aberto?',
-          a: 'As seletivas serão realizadas no ginásio da Sangaree Middle School — local coberto.',
         },
         {
           q: 'O que acontece após as seletivas?',
@@ -591,7 +567,7 @@ export const i18n = {
       step1Title: 'CLIQUE NO BOTÃO ABAIXO',
       step1Desc: 'Toque no botão para acessar nossa plataforma oficial de inscrição.',
       step2Title: 'CRIE SUA CONTA NO PLAYMETRICS',
-      step2Desc: 'Configure sua conta gratuita no PlayMetrics com seu e-mail. Leva 30 segundos.',
+      step2Desc: 'Configure sua conta no PlayMetrics com seu e-mail. Leva 30 segundos.',
       step3Title: 'CONCLUA A INSCRIÇÃO',
       step3Desc: 'Preencha as informações do seu filho e conclua a inscrição. Você receberá um e-mail de confirmação imediatamente.',
       trustStrip: [
