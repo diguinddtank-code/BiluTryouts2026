@@ -4,7 +4,6 @@ import {useEffect} from 'react';
 import {LanguageProvider} from '@/components/bisa-tryouts/LanguageContext';
 import {Navbar} from '@/components/bisa-tryouts/Navbar';
 import {Hero} from '@/components/bisa-tryouts/Hero';
-import {About} from '@/components/bisa-tryouts/About';
 import {LogoDivider} from '@/components/bisa-tryouts/LogoDivider';
 import {Leagues} from '@/components/bisa-tryouts/Leagues';
 import {LocationSchedule} from '@/components/bisa-tryouts/LocationSchedule';
@@ -13,6 +12,7 @@ import {Pillars} from '@/components/bisa-tryouts/Pillars';
 import {FAQ} from '@/components/bisa-tryouts/FAQ';
 import {RegistrationForm} from '@/components/bisa-tryouts/RegistrationForm';
 import {Footer} from '@/components/bisa-tryouts/Footer';
+import {FloatingCTA} from '@/components/bisa-tryouts/FloatingCTA';
 
 // New Components
 import { CoachesGrid } from '@/components/CoachesGrid';
@@ -40,13 +40,13 @@ export default function Page() {
       <div className="min-h-screen flex flex-col font-outfit bg-[#022c22] text-[#F5F5F5] selection:bg-[#ccff00] selection:text-[#0a1f14] overflow-x-hidden">
         <ScrollProgress />
         <Navbar />
+        <FloatingCTA />
         <main className="flex-grow">
           <Hero />
           
           {/* Scrollytelling Narrative Starts Here */}
           <WorldLanguages />
           
-          <About />
           <ClubGallery />
           <CoachesGrid />
           

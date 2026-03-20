@@ -32,7 +32,6 @@ export const i18n = {
       'Coaches from 24 Countries',
       'Ladson, South Carolina',
       'Carolina Premier League',
-      'Free to Register',
       'U7 through U19',
       'Elite Development',
       'Limited Spots Available'
@@ -227,7 +226,6 @@ export const i18n = {
       'Entrenadores de 24 Países',
       'Ladson, South Carolina',
       'Carolina Premier League',
-      'Registro Gratuito',
       'U7 hasta U19',
       'Desarrollo de Élite',
       'Cupos Limitados Disponibles'
@@ -422,7 +420,6 @@ export const i18n = {
       'Treinadores de 24 Países',
       'Ladson, Carolina do Sul',
       'Carolina Premier League',
-      'Inscrição Gratuita',
       'U7 até U19',
       'Desenvolvimento de Elite',
       'Vagas Limitadas Disponíveis'
