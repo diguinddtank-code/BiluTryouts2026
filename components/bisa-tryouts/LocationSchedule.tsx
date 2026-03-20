@@ -40,34 +40,34 @@ export function LocationSchedule() {
           className="bg-[#0a1f14] rounded-2xl shadow-xl overflow-hidden border border-white/10"
         >
           <div className="grid grid-cols-1 md:grid-cols-2">
-            <div className="p-8 sm:p-12 border-b md:border-b-0 md:border-r border-white/10 flex flex-col justify-center">
+            <div className="p-6 sm:p-12 border-b md:border-b-0 md:border-r border-white/10 flex flex-col justify-center">
               <a
                 href="https://maps.google.com/?q=1050+Discovery+Dr,+Ladson,+SC"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group flex items-start gap-4 hover:bg-white/5 p-4 -m-4 rounded-xl transition-colors"
               >
-                <div className="flex-shrink-0 w-12 h-12 bg-[#113321] rounded-full flex items-center justify-center text-[#ccff00] group-hover:scale-110 transition-transform border border-white/10">
-                  <MapPin className="w-6 h-6" />
+                <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-[#113321] rounded-full flex items-center justify-center text-[#ccff00] group-hover:scale-110 transition-transform border border-white/10">
+                  <MapPin className="w-5 h-5 sm:w-6 sm:h-6" />
                 </div>
                 <div>
-                  <h3 className="font-montserrat font-bold text-xl mb-1 text-white">
+                  <h3 className="font-montserrat font-bold text-lg sm:text-xl mb-1 text-white">
                     {t.location.addressName}
                   </h3>
-                  <p className="text-[15px] sm:text-[16px] text-white/[0.78] leading-[1.65]">
+                  <p className="text-sm sm:text-[16px] text-white/[0.78] leading-[1.65]">
                     {t.location.addressStreet}
                   </p>
-                  <span className="text-sm font-semibold text-[#0a1f14] mt-3 inline-block bg-[#ccff00] px-4 py-1.5 rounded-full transition-transform group-hover:scale-105">
+                  <span className="text-xs sm:text-sm font-semibold text-[#0a1f14] mt-3 inline-block bg-[#ccff00] px-4 py-1.5 rounded-full transition-transform group-hover:scale-105">
                     Get Directions →
                   </span>
                 </div>
               </a>
             </div>
 
-            <div className="p-8 sm:p-12 bg-[#113321]/50 flex flex-col justify-center">
+            <div className="p-6 sm:p-12 bg-[#113321]/50 flex flex-col justify-center">
               <div className="flex items-center gap-3 mb-2">
-                <Clock className="w-6 h-6 text-[#ccff00]" />
-                <h3 className="font-montserrat font-bold text-xl text-white">
+                <Clock className="w-5 h-5 sm:w-6 sm:h-6 text-[#ccff00]" />
+                <h3 className="font-montserrat font-bold text-lg sm:text-xl text-white">
                   Tryout Schedule
                 </h3>
               </div>

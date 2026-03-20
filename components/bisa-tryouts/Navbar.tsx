@@ -25,7 +25,7 @@ export function Navbar() {
         <div className="flex items-center justify-between h-16 md:h-24">
           {/* Logo */}
           <div className="flex items-center gap-3 min-w-0 group cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-            <div className="relative w-12 h-12 sm:w-16 sm:h-16 md:w-32 md:h-32 flex-shrink-0 transition-transform duration-300 group-hover:scale-105 md:translate-y-4">
+            <div className="relative w-14 h-14 sm:w-20 sm:h-20 md:w-32 md:h-32 flex-shrink-0 transition-transform duration-300 group-hover:scale-105 md:translate-y-4">
               <Image
                 src="https://bilusoccer.com/wp-content/uploads/2025/03/h2-3.png"
                 alt="BISA Logo"
@@ -38,19 +38,22 @@ export function Navbar() {
           </div>
 
           {/* Language Selectors */}
-          <div className="flex items-center gap-2 sm:gap-3">
+          <div className="flex items-center gap-1.5 sm:gap-3">
             {languages.map((lang) => (
               <button
                 key={lang}
                 onClick={() => setLanguage(lang)}
-                className={`px-3 py-2 sm:px-4 sm:py-2 rounded-md font-montserrat font-bold text-[10px] sm:text-[12px] tracking-widest transition-all duration-200 border ${
+                className={`px-2 py-1.5 sm:px-4 sm:py-2 rounded-md font-montserrat font-bold text-[9px] sm:text-[12px] tracking-widest transition-all duration-200 border ${
                   language === lang
                     ? 'bg-[#ccff00] text-[#0a1f14] border-[#ccff00]'
                     : 'bg-transparent text-white/40 border-white/10 hover:border-white/30 hover:text-white'
                 }`}
               >
                 <span className="uppercase">
-                  {lang === 'EN' ? 'US EN' : lang === 'ES' ? 'ES ES' : 'BR PT'}
+                  <span className="sm:hidden">{lang}</span>
+                  <span className="hidden sm:inline">
+                    {lang === 'EN' ? 'US EN' : lang === 'ES' ? 'ES ES' : 'BR PT'}
+                  </span>
                 </span>
               </button>
             ))}

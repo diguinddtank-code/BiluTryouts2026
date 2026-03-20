@@ -70,7 +70,7 @@ export function Hero() {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 0.02, scale: 1 }}
           transition={{ duration: 1.5, ease: "easeOut" }}
-          className="font-montserrat font-black text-[30vw] md:text-[25vw] leading-none text-white whitespace-nowrap italic"
+          className="font-montserrat font-black text-[40vw] sm:text-[30vw] md:text-[25vw] leading-none text-white whitespace-nowrap italic"
         >
           BISA
         </motion.span>
@@ -107,14 +107,14 @@ export function Hero() {
         {/* Main Headline */}
         <div className="relative mb-8 sm:mb-12 w-full max-w-5xl mx-auto flex flex-col items-center">
           <h1 
-            className="font-montserrat font-black uppercase leading-[0.85] flex flex-col items-center italic"
-            style={{ fontSize: 'clamp(3rem, 11vw, 8rem)', letterSpacing: '-0.04em' }}
+            className="font-montserrat font-black uppercase leading-[0.85] flex flex-col items-center italic text-center"
+            style={{ fontSize: 'clamp(2.5rem, 10vw, 8rem)', letterSpacing: '-0.04em' }}
           >
             <motion.span
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, ease: "easeOut" }}
-              className="block text-white drop-shadow-2xl whitespace-nowrap"
+              className="block text-white drop-shadow-2xl"
             >
               {t.hero.headlinePart1}
             </motion.span>
@@ -122,7 +122,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
-              className="block text-[#ccff00] drop-shadow-[0_0_30px_rgba(204,255,0,0.3)] whitespace-nowrap"
+              className="block text-[#ccff00] drop-shadow-[0_0_30px_rgba(204,255,0,0.3)]"
             >
               {t.hero.headlinePart2}
             </motion.span>
@@ -171,7 +171,7 @@ export function Hero() {
           className="flex flex-col items-center mt-12 sm:mt-20 mb-8 sm:mb-16"
         >
           <span className="text-sm font-bold text-white/60 uppercase tracking-widest mb-4">{t.hero.tryoutsIn}</span>
-          <div className="flex gap-3 sm:gap-6">
+          <div className="grid grid-cols-2 sm:flex sm:gap-6 gap-3">
             {[
               {label: t.hero.days, value: timeLeft.days},
               {label: t.hero.hours, value: timeLeft.hours},

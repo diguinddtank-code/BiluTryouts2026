@@ -35,17 +35,10 @@ export function Timeline() {
             whileInView={{scaleY: 1}}
             viewport={{once: true, margin: '-100px'}}
             transition={{duration: 1, ease: 'easeInOut'}}
-            className="absolute left-[27px] sm:left-1/2 top-0 bottom-0 w-1 bg-white/10 origin-top hidden md:block"
-          />
-          <motion.div
-            initial={{scaleY: 0}}
-            whileInView={{scaleY: 1}}
-            viewport={{once: true, margin: '-100px'}}
-            transition={{duration: 1, ease: 'easeInOut'}}
-            className="absolute left-[27px] top-0 bottom-0 w-1 bg-white/10 origin-top md:hidden"
+            className="absolute left-[20px] sm:left-1/2 top-0 bottom-0 w-[2px] bg-white/10 origin-top"
           />
 
-          <div className="space-y-16">
+          <div className="space-y-12 sm:space-y-16">
             {t.timeline.steps.map((step, i) => (
               <motion.div
                 key={i}
@@ -58,16 +51,16 @@ export function Timeline() {
                 }`}
               >
                 {/* Number Circle */}
-                <div className="absolute left-0 md:left-1/2 w-14 h-14 bg-[#ccff00] rounded-full border-4 border-[#0d1f0d] flex items-center justify-center font-montserrat font-black text-xl text-[#0a1f14] z-10 md:-translate-x-1/2 shadow-lg">
+                <div className="absolute left-0 md:left-1/2 w-10 h-10 sm:w-14 sm:h-14 bg-[#ccff00] rounded-full border-2 sm:border-4 border-[#0d1f0d] flex items-center justify-center font-montserrat font-black text-base sm:text-xl text-[#0a1f14] z-10 md:-translate-x-1/2 shadow-lg">
                   {i + 1}
                 </div>
 
-                <div className={`w-full md:w-5/12 pl-20 md:pl-0 ${i % 2 === 0 ? 'md:pl-16 text-left' : 'md:pr-16 md:text-right'}`}>
-                  <div className="bg-[#113321] p-6 sm:p-8 rounded-2xl shadow-sm border border-white/10 hover:shadow-md transition-shadow">
-                    <h3 className="font-montserrat font-bold text-2xl text-white mb-3">
+                <div className={`w-full md:w-5/12 pl-14 sm:pl-20 md:pl-0 ${i % 2 === 0 ? 'md:pl-16 text-left' : 'md:pr-16 md:text-right'}`}>
+                  <div className="bg-[#113321] p-5 sm:p-8 rounded-2xl shadow-sm border border-white/10 hover:shadow-md transition-shadow">
+                    <h3 className="font-montserrat font-bold text-xl sm:text-2xl text-white mb-2 sm:mb-3">
                       {step.title}
                     </h3>
-                    <p className="text-[15px] sm:text-[16px] text-white/[0.78] leading-[1.65]">
+                    <p className="text-sm sm:text-[16px] text-white/[0.78] leading-[1.65]">
                       {step.desc}
                     </p>
                   </div>

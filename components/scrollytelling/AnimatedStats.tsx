@@ -8,9 +8,9 @@ export function AnimatedStats() {
   const { t } = useLanguage();
   const { elementRef, isIntersecting } = useScrollReveal({ threshold: 0.5 });
 
-  const countries = useCountUp(24, 2000, isIntersecting);
-  const ages = useCountUp(12, 2000, isIntersecting);
-  const reached = useCountUp(23, 2000, isIntersecting);
+  const { count: countries, elementRef: ref1 } = useCountUp(24, 2000);
+  const { count: ages, elementRef: ref2 } = useCountUp(12, 2000);
+  const { count: reached, elementRef: ref3 } = useCountUp(23, 2000);
 
   return (
     <section 
@@ -19,7 +19,7 @@ export function AnimatedStats() {
     >
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-24">
         {/* Stat 1 */}
-        <div className="text-center">
+        <div className="text-center" ref={ref1 as any}>
           <div className="text-8xl md:text-9xl font-black text-[#F5F5F5] tracking-tighter mb-4 leading-none">
             {countries}
           </div>
@@ -29,7 +29,7 @@ export function AnimatedStats() {
         </div>
 
         {/* Stat 2 */}
-        <div className="text-center">
+        <div className="text-center" ref={ref2 as any}>
           <div className="text-8xl md:text-9xl font-black text-[#F5F5F5] tracking-tighter mb-4 leading-none">
             {ages}
           </div>
@@ -39,7 +39,7 @@ export function AnimatedStats() {
         </div>
 
         {/* Stat 3 */}
-        <div className="text-center">
+        <div className="text-center" ref={ref3 as any}>
           <div className="text-8xl md:text-9xl font-black text-[#F5F5F5] tracking-tighter mb-4 leading-none">
             {reached}
           </div>

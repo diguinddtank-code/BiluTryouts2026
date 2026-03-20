@@ -1,56 +1,33 @@
-'use client';
-
-import { useEffect, useRef, useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 interface ScrollRevealOptions {
   threshold?: number;
   rootMargin?: string;
-  triggerOnce?: boolean;
 }
 
-export function useScrollReveal(options: ScrollRevealOptions = {}) {
-  const { threshold = 0.1, rootMargin = '0px', triggerOnce = true } = options;
-  const [isIntersecting, setIntersecting] = useState(false);
-  const [scrollProgress, setScrollProgress] = useState(0);
+export function useScrollReveal(options: ScrollRevealOptions = { threshold: 0.1, rootMargin: '0px' }) {
+  const [isIntersecting, setIsIntersecting] = useState(false);
   const elementRef = useRef<HTMLElement | null>(null);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        setIntersecting(entry.isIntersecting);
-      },
-      { threshold, rootMargin }
-    );
-
-    const element = elementRef.current;
-    if (element) {
-      observer.observe(element);
-    }
-
-    const handleScroll = () => {
-      if (!element || !isIntersecting) return;
-
-      const rect = element.getBoundingClientRect();
-      const windowHeight = window.innerHeight;
-      
-      // Calculate how much of the element has passed through the viewport
-      // 0 when top enters bottom, 1 when bottom leaves top
-      const progress = Math.max(0, Math.min(1, (windowHeight - rect.top) / (windowHeight + rect.height)));
-      setScrollProgress(progress);
-    };
-
-    if (isIntersecting) {
-      window.addEventListener('scroll', handleScroll, { passive: true });
-      handleScroll();
-    }
-
-    return () => {
-      if (element) {
-        observer.unobserve(element);
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        setIsIntersecting(true);
+        if (elementRef.current) {
+          observer.unobserve(elementRef.current);
+        }
       }
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, [threshold, rootMargin, isIntersecting]);
+    }, {
+      threshold: options.threshold,
+      rootMargin: options.rootMargin
+    });
 
-  return { elementRef, isIntersecting, scrollProgress };
+    if (elementRef.current) {
+      observer.observe(elementRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, [options.threshold, options.rootMargin]);
+
+  return { elementRef, isIntersecting };
 }

@@ -1,34 +1,53 @@
-'use client';
+import { useState, useEffect, useRef } from 'react';
 
-import { useEffect, useState } from 'react';
-
-export function useCountUp(end: number, duration: number = 2000, trigger: boolean = false) {
-  const [count, setCount] = useState(0);
+export function useCountUp(end: number, duration: number = 2000, start: number = 0) {
+  const [count, setCount] = useState(start);
+  const [isComplete, setIsComplete] = useState(false);
+  const countRef = useRef(start);
+  const startTimeRef = useRef<number | null>(null);
+  const [isIntersecting, setIsIntersecting] = useState(false);
+  const elementRef = useRef<HTMLElement | null>(null);
 
   useEffect(() => {
-    if (!trigger) return;
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        setIsIntersecting(true);
+        observer.disconnect();
+      }
+    }, { threshold: 0.1 });
 
-    let startTime: number | null = null;
-    let animationFrame: number;
+    if (elementRef.current) observer.observe(elementRef.current);
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    if (!isIntersecting) return;
 
     const animate = (timestamp: number) => {
-      if (!startTime) startTime = timestamp;
-      const progress = Math.min((timestamp - startTime) / duration, 1);
+      if (!startTimeRef.current) startTimeRef.current = timestamp;
+      const progress = timestamp - startTimeRef.current;
+      const percentage = Math.min(progress / duration, 1);
       
       // easeOutExpo
-      const easedProgress = progress === 1 ? 1 : 1 - Math.pow(2, -10 * progress);
+      const ease = percentage === 1 ? 1 : 1 - Math.pow(2, -10 * percentage);
       
-      setCount(Math.floor(easedProgress * end));
+      const currentCount = Math.floor(start + (end - start) * ease);
+      
+      if (countRef.current !== currentCount) {
+        countRef.current = currentCount;
+        setCount(currentCount);
+      }
 
-      if (progress < 1) {
-        animationFrame = requestAnimationFrame(animate);
+      if (percentage < 1) {
+        requestAnimationFrame(animate);
+      } else {
+        setCount(end);
+        setIsComplete(true);
       }
     };
 
-    animationFrame = requestAnimationFrame(animate);
+    requestAnimationFrame(animate);
+  }, [end, duration, start, isIntersecting]);
 
-    return () => cancelAnimationFrame(animationFrame);
-  }, [end, duration, trigger]);
-
-  return count;
+  return { count, isComplete, elementRef };
 }

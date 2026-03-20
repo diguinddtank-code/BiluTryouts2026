@@ -45,7 +45,7 @@ export function RegistrationForm() {
             <span className="w-1.5 h-1.5 rounded-full bg-[#ccff00]" />
             <span className="text-[11px] font-bold text-[#ccff00] uppercase tracking-[0.2em]">BISA ACADEMY</span>
           </div>
-          <h2 className="font-montserrat font-black text-4xl sm:text-5xl lg:text-6xl tracking-tighter uppercase text-[#ccff00] mb-4">
+          <h2 className="font-montserrat font-black text-[clamp(2rem,10vw,3.75rem)] tracking-tighter uppercase text-[#ccff00] leading-[0.9] mb-6">
             {t.form.headline}
           </h2>
           <p className="text-lg sm:text-xl text-white/[0.78] font-light leading-[1.65]">
@@ -105,11 +105,11 @@ export function RegistrationForm() {
           className="max-w-3xl mx-auto text-center"
         >
           {/* Trust Strip */}
-          <div className="grid grid-cols-2 sm:flex sm:flex-row sm:flex-wrap items-center justify-center gap-3 sm:gap-6 mb-8">
+          <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-3 sm:gap-6 mb-10">
             {t.form.trustStrip.map((item: string, i: number, arr: string[]) => (
               <div key={i} className="flex items-center gap-2">
                 {trustStripIcons[i % trustStripIcons.length]}
-                <span className="text-[11px] uppercase tracking-[0.12em] text-white/55 font-medium">{item}</span>
+                <span className="text-[10px] sm:text-[11px] uppercase tracking-[0.12em] text-white/55 font-medium whitespace-nowrap">{item}</span>
                 {i < arr.length - 1 && <span className="hidden sm:inline-block text-white/20 ml-4">·</span>}
               </div>
             ))}

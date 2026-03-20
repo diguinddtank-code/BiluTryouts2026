@@ -23,7 +23,7 @@ export function Pillars() {
             <span className="w-1.5 h-1.5 rounded-full bg-[#ccff00]" />
             <span className="text-[11px] font-bold text-[#ccff00] uppercase tracking-[0.2em]">BISA ACADEMY</span>
           </div>
-          <h2 className="font-montserrat font-black text-5xl sm:text-6xl tracking-tighter uppercase text-[#ccff00]">
+          <h2 className="font-montserrat font-black text-[clamp(2rem,10vw,3.75rem)] tracking-tighter uppercase text-[#ccff00] leading-none">
             {t.pillars.headline}
           </h2>
         </motion.div>

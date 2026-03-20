@@ -1,77 +1,143 @@
 'use client';
 
+import { useEffect, useState, useRef } from 'react';
 import { useLanguage } from '@/components/bisa-tryouts/LanguageContext';
-import { useScrollReveal } from '@/hooks/useScrollReveal';
+import { ImagePlaceholder } from '@/components/ui/ImagePlaceholder';
+
+const SUGGESTIONS = [
+  "SUGGESTED: Academy founding / early training photos",
+  "SUGGESTED: First competition / team photo",
+  "SUGGESTED: Projeto Bilu launch / humanitarian action",
+  "SUGGESTED: MLS Next competition / current team"
+];
 
 export function OriginTimeline() {
   const { t } = useLanguage();
-  const { elementRef, isIntersecting, scrollProgress } = useScrollReveal({ threshold: 0.1 });
+  const [activeIndex, setActiveIndex] = useState(0);
+  const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const index = cardRefs.current.findIndex(ref => ref === entry.target);
+          if (index !== -1) setActiveIndex(index);
+        }
+      });
+    }, { rootMargin: '-40% 0px -40% 0px' });
+
+    cardRefs.current.forEach(ref => {
+      if (ref) observer.observe(ref);
+    });
+
+    return () => observer.disconnect();
+  }, []);
 
   return (
-    <section 
-      ref={elementRef as any}
-      className="relative min-h-[400vh] bg-[#080808] py-32 px-6"
-    >
-      {/* Sticky Section Header */}
-      <div className="sticky top-0 h-screen flex flex-col items-center justify-center pointer-events-none z-10">
-        <span 
-          className={`inline-block font-mono text-xs tracking-[0.3em] text-[#D0021B] mb-8 transition-all duration-700 ${
-            isIntersecting ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
-          }`}
-        >
-          {t.originTimeline.sectionTitle1}
-        </span>
+    <section className="relative bg-[#080808] text-[#F5F5F5] py-32">
+      
+      <style dangerouslySetInnerHTML={{__html: `
+        @keyframes sonar {
+          0% { transform: scale(1); opacity: 0.6; }
+          100% { transform: scale(2.5); opacity: 0; }
+        }
+        .animate-sonar { animation: sonar 2s ease infinite; }
+      `}} />
 
-        <h2 className="text-8xl md:text-[12rem] font-black leading-[0.8] tracking-tighter uppercase mb-12 text-center">
-          <div className="overflow-hidden">
-            <span 
-              className={`block transition-all duration-700 delay-200 ${
-                isIntersecting ? 'translate-y-0' : 'translate-y-full'
-              }`}
-            >
-              {t.originTimeline.sectionTitle2}
+      <div className="max-w-[1440px] mx-auto px-6 lg:px-12 flex flex-col lg:flex-row gap-16">
+        
+        {/* Left Column: Sticky Header (Desktop Only) */}
+        <div className="hidden lg:block w-[40%] relative">
+          <div className="sticky top-[20vh]">
+            <span className="block font-barlow text-[11px] tracking-[6px] text-[#D0021B] uppercase mb-4">
+              {t.timeline.headline}
             </span>
-          </div>
-        </h2>
-
-        {/* Vertical Progress Line */}
-        <div className="relative w-px h-64 bg-[#F5F5F5]/10 mt-12">
-          <div 
-            className="absolute top-0 left-0 w-full bg-[#D0021B] transition-all duration-75 ease-out"
-            style={{ height: `${scrollProgress * 100}%` }}
-          />
-          {/* Moving Dot */}
-          <div 
-            className="absolute left-1/2 -translate-x-1/2 w-3 h-3 bg-[#D0021B] rounded-full shadow-[0_0_15px_rgba(208,2,27,0.5)] transition-all duration-75 ease-out"
-            style={{ top: `${scrollProgress * 100}%` }}
-          />
-        </div>
-      </div>
-
-      {/* Timeline Milestones */}
-      <div className="relative z-20 max-w-5xl mx-auto -mt-[50vh]">
-        {t.originTimeline.milestones.map((milestone, i) => (
-          <div 
-            key={i}
-            className={`min-h-[100vh] flex flex-col justify-center ${
-              i % 2 === 0 ? 'items-start text-left' : 'items-end text-right'
-            }`}
-          >
-            <div className={`max-w-md transition-all duration-1000 ${
-              isIntersecting ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
-            }`}>
-              <span className="font-mono text-xs tracking-widest text-[#D0021B] mb-4 block">
-                {milestone.label}
-              </span>
-              <h3 className="text-4xl md:text-6xl font-black tracking-tighter text-[#F5F5F5] mb-6 uppercase">
-                {milestone.title}
-              </h3>
-              <p className="text-lg text-[#F5F5F5]/60 font-medium leading-relaxed">
-                {milestone.body}
-              </p>
+            <div className="relative">
+              <div className="font-bebas text-[clamp(160px,22vw,260px)] text-[#F5F5F5] opacity-[0.05] leading-none select-none transition-all duration-500">
+                {String(activeIndex + 1).padStart(2, '0')}
+              </div>
+              <div className="absolute top-1/2 left-0 -translate-y-1/2 w-full pr-8">
+                {t.timeline.steps.map((step, i) => (
+                  <div 
+                    key={i}
+                    className="absolute top-1/2 left-0 -translate-y-1/2 w-full transition-all duration-500"
+                    style={{
+                      opacity: activeIndex === i ? 1 : 0,
+                      transform: activeIndex === i ? 'translateY(-50%)' : 'translateY(-30%)',
+                      pointerEvents: activeIndex === i ? 'auto' : 'none'
+                    }}
+                  >
+                    <h3 className="font-bebas text-[clamp(36px,4vw,56px)] leading-[0.9] text-[#F5F5F5] uppercase">
+                      {step.title}
+                    </h3>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
-        ))}
+        </div>
+
+        {/* Mobile Header */}
+        <div className="lg:hidden mb-12">
+          <span className="block font-barlow text-[11px] tracking-[6px] text-[#D0021B] uppercase mb-4">
+            {t.timeline.headline}
+          </span>
+        </div>
+
+        {/* Right Column: Scrolling Cards */}
+        <div className="w-full lg:w-[60%] flex flex-col gap-24 lg:gap-48 pb-[20vh]">
+          {t.timeline.steps.map((step, i) => {
+            const isProjetoBilu = i === 2; // Card 3
+            
+            return (
+              <div 
+                key={i}
+                ref={el => { cardRefs.current[i] = el; }}
+                className={`relative pl-6 md:pl-10 transition-all duration-700 ease-out ${
+                  activeIndex >= i ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'
+                }`}
+                style={{
+                  borderLeftWidth: isProjetoBilu ? '4px' : '2px',
+                  borderLeftColor: isProjetoBilu ? '#D0021B' : 'rgba(255,255,255,0.2)',
+                  borderLeftStyle: 'solid'
+                }}
+              >
+                {/* Sonar Dot */}
+                <div className="absolute top-0 -left-[5px] md:-left-[7px]">
+                  <div className="relative w-[8px] h-[8px] md:w-[12px] md:h-[12px] bg-[#D0021B]">
+                    <div className="absolute inset-0 border-2 border-[#D0021B] animate-sonar" />
+                  </div>
+                </div>
+
+                {/* Mobile Number & Title */}
+                <div className="lg:hidden mb-6">
+                  <div className="font-bebas text-6xl text-[#F5F5F5] opacity-10 leading-none mb-2">
+                    {String(i + 1).padStart(2, '0')}
+                  </div>
+                  <h3 className="font-bebas text-4xl leading-[0.9] text-[#F5F5F5] uppercase">
+                    {step.title}
+                  </h3>
+                </div>
+
+                {/* Image Placeholder */}
+                <div className="mb-8 w-full">
+                  <ImagePlaceholder 
+                    aspectRatio="16/9" 
+                    suggestion={SUGGESTIONS[i] || "SUGGESTED: Timeline event photo"} 
+                  />
+                </div>
+
+                {/* Description */}
+                <div className="bg-[#111111] p-6 md:p-8 border border-white/[0.06]">
+                  <p className="font-dm text-base md:text-lg text-[#BFBFBF] leading-relaxed">
+                    {step.desc}
+                  </p>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
       </div>
     </section>
   );

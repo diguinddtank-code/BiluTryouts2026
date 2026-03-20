@@ -18,7 +18,7 @@ export function EpicCta() {
       </div>
 
       <div className="relative z-10 max-w-5xl w-full text-center">
-        <h2 className="text-8xl md:text-[15rem] font-black leading-[0.8] tracking-tighter text-[#F5F5F5] mb-12 uppercase">
+        <h2 className="text-[clamp(3rem,15vw,15rem)] font-black leading-[0.8] tracking-tighter text-[#F5F5F5] mb-12 uppercase">
           <div className="overflow-hidden">
             <span 
               className={`block transition-all duration-1000 delay-200 ${
@@ -40,7 +40,7 @@ export function EpicCta() {
         </h2>
 
         <p 
-          className={`max-w-2xl mx-auto text-2xl md:text-3xl text-[#F5F5F5]/60 font-bold leading-tight mb-16 transition-all duration-1000 delay-600 ${
+          className={`max-w-2xl mx-auto text-xl sm:text-2xl md:text-3xl text-[#F5F5F5]/60 font-bold leading-tight mb-16 transition-all duration-1000 delay-600 ${
             isIntersecting ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}
         >

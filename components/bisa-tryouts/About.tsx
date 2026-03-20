@@ -40,37 +40,37 @@ export function About() {
             whileInView={{opacity: 1, x: 0}}
             viewport={{once: true, margin: '-100px'}}
             transition={{duration: 0.7}}
-            className="grid grid-cols-2 gap-8"
+            className="grid grid-cols-1 sm:grid-cols-2 gap-8"
           >
-            <div className="flex flex-col">
-              <span className="font-montserrat font-black text-6xl text-[#ccff00] mb-2">
+            <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
+              <span className="font-montserrat font-black text-5xl sm:text-6xl text-[#ccff00] mb-2">
                 <Counter from={0} to={24} />
               </span>
-              <span className="text-sm font-semibold text-white/50 uppercase tracking-[0.08em]">
+              <span className="text-xs sm:text-sm font-semibold text-white/50 uppercase tracking-[0.08em]">
                 {t.about.stats.countries}
               </span>
             </div>
-            <div className="flex flex-col">
-              <span className="font-montserrat font-black text-6xl text-[#ccff00] mb-2">
+            <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
+              <span className="font-montserrat font-black text-5xl sm:text-6xl text-[#ccff00] mb-2">
                 U7-U19
               </span>
-              <span className="text-sm font-semibold text-white/50 uppercase tracking-[0.08em]">
+              <span className="text-xs sm:text-sm font-semibold text-white/50 uppercase tracking-[0.08em]">
                 {t.about.stats.ages}
               </span>
             </div>
-            <div className="flex flex-col">
-              <span className="font-montserrat font-black text-6xl text-[#ccff00] mb-2">
+            <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
+              <span className="font-montserrat font-black text-5xl sm:text-6xl text-[#ccff00] mb-2">
                 CPL
               </span>
-              <span className="text-sm font-semibold text-white/50 uppercase tracking-[0.08em]">
+              <span className="text-xs sm:text-sm font-semibold text-white/50 uppercase tracking-[0.08em]">
                 {t.about.stats.cpl}
               </span>
             </div>
-            <div className="flex flex-col">
-              <span className="font-montserrat font-black text-6xl text-[#ccff00] mb-2">
+            <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
+              <span className="font-montserrat font-black text-5xl sm:text-6xl text-[#ccff00] mb-2">
                 SC
               </span>
-              <span className="text-sm font-semibold text-white/50 uppercase tracking-[0.08em]">
+              <span className="text-xs sm:text-sm font-semibold text-white/50 uppercase tracking-[0.08em]">
                 {t.about.stats.sc}
               </span>
             </div>
