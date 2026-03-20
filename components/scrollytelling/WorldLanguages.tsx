@@ -4,6 +4,7 @@ import { useLanguage } from '@/components/bisa-tryouts/LanguageContext';
 import { useScrollReveal } from '@/hooks/useScrollReveal';
 import { useRef, useState, useEffect } from 'react';
 import { useInView } from 'motion/react';
+import Image from 'next/image';
 
 function Counter({from, to, duration = 2}: {from: number; to: number; duration?: number}) {
   const ref = useRef(null);
@@ -120,24 +121,30 @@ export function WorldLanguages() {
           {/* Add a subtle glow behind the flags */}
           <div className="absolute left-0 right-0 top-1/2 -translate-y-1/2 h-32 bg-[#ccff00]/10 blur-[50px] -z-10 pointer-events-none" />
           
-          <div className="flex whitespace-nowrap animate-marquee py-2" style={{ animationDuration: '40s' }}>
+          <div className="flex whitespace-nowrap animate-marquee py-4" style={{ animationDuration: '40s' }}>
             {[...flags1, ...flags1, ...flags1, ...flags1].map((flag, i) => (
-              <div key={i} className="mx-6 sm:mx-10 relative w-12 h-8 sm:w-20 sm:h-12 drop-shadow-[0_0_15px_rgba(255,255,255,0.2)] hover:scale-110 transition-transform duration-300">
-                <img
+              <div key={i} className="mx-6 sm:mx-10 relative w-12 h-8 sm:w-20 sm:h-12 flex-shrink-0 drop-shadow-[0_0_15px_rgba(255,255,255,0.2)] hover:scale-110 transition-transform duration-300">
+                <Image
                   src={flag.src}
                   alt={flag.alt}
-                  className="w-full h-full object-cover rounded-sm"
+                  fill
+                  className="object-cover rounded-sm"
+                  unoptimized={true}
+                  referrerPolicy="no-referrer"
                 />
               </div>
             ))}
           </div>
-          <div className="flex whitespace-nowrap animate-marquee py-2" style={{ animationDirection: 'reverse', animationDuration: '45s' }}>
+          <div className="flex whitespace-nowrap animate-marquee py-4" style={{ animationDirection: 'reverse', animationDuration: '45s' }}>
             {[...flags2, ...flags2, ...flags2, ...flags2].map((flag, i) => (
-              <div key={i} className="mx-6 sm:mx-10 relative w-12 h-8 sm:w-20 sm:h-12 drop-shadow-[0_0_15px_rgba(255,255,255,0.2)] hover:scale-110 transition-transform duration-300">
-                <img
+              <div key={i} className="mx-6 sm:mx-10 relative w-12 h-8 sm:w-20 sm:h-12 flex-shrink-0 drop-shadow-[0_0_15px_rgba(255,255,255,0.2)] hover:scale-110 transition-transform duration-300">
+                <Image
                   src={flag.src}
                   alt={flag.alt}
-                  className="w-full h-full object-cover rounded-sm"
+                  fill
+                  className="object-cover rounded-sm"
+                  unoptimized={true}
+                  referrerPolicy="no-referrer"
                 />
               </div>
             ))}
