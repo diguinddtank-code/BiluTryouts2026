@@ -8,7 +8,6 @@ import {LogoDivider} from '@/components/bisa-tryouts/LogoDivider';
 import {Leagues} from '@/components/bisa-tryouts/Leagues';
 import {LocationSchedule} from '@/components/bisa-tryouts/LocationSchedule';
 import {Timeline} from '@/components/bisa-tryouts/Timeline';
-import {Pillars} from '@/components/bisa-tryouts/Pillars';
 import {FAQ} from '@/components/bisa-tryouts/FAQ';
 import {RegistrationForm} from '@/components/bisa-tryouts/RegistrationForm';
 import {Footer} from '@/components/bisa-tryouts/Footer';
@@ -57,7 +56,6 @@ export default function Page() {
           <LocationSchedule />
           
           <Timeline />
-          <Pillars />
           <FAQ />
           
           <RegistrationForm />
