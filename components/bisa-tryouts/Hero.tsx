@@ -142,14 +142,16 @@ export function Hero() {
           transition={{delay: 1.2, duration: 0.5}}
           className="flex flex-col items-center gap-4"
         >
-          <motion.button
-            onClick={() => document.getElementById('registration-section')?.scrollIntoView({ behavior: 'smooth' })}
+          <motion.a
+            href="https://playmetrics.com/signup?clubToken=TG9naW4tQ2x1Yi52MS05OTEtMTc3OTAyMDM4M3x1dW9IaisxRnNyWFQxTVp3SE13WFFwVFJPZU12S0x2OG9OVkNBMk94ZDRnPQ==&program_id=92864"
+            target="_blank"
+            rel="noopener noreferrer"
             whileHover={{scale: 1.05}}
             whileTap={{scale: 0.95}}
             className="px-8 py-4 sm:px-10 sm:py-5 bg-[#ccff00] text-[#0a1f14] font-montserrat font-black uppercase text-xs sm:text-sm tracking-widest rounded-xl shadow-[0_0_20px_rgba(204,255,0,0.2)] hover:shadow-[0_0_40px_rgba(204,255,0,0.4)] transition-all duration-300"
           >
             {t.hero.cta}
-          </motion.button>
+          </motion.a>
         </motion.div>
 
         <motion.div

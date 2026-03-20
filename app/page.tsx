@@ -54,11 +54,9 @@ export default function Page() {
           <LogoDivider />
           <Leagues />
           <LocationSchedule />
-          
+          <RegistrationForm />
           <Timeline />
           <FAQ />
-          
-          <RegistrationForm />
           
           <EpicCta />
         </main>
