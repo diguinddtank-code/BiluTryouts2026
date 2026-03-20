@@ -10,7 +10,7 @@ export function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section className="py-24 bg-[#0d1f0d] text-white overflow-x-hidden">
+    <section className="py-12 sm:py-16 bg-[#022c22] text-white overflow-x-hidden">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{opacity: 0, y: 40}}

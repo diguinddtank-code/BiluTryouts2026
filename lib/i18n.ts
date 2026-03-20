@@ -97,6 +97,14 @@ export const i18n = {
           title: 'COMPETITIVE PATHWAY',
           desc: 'Our teams compete in the Carolina Premier League (CPL), with pathways to higher levels for standout athletes.',
         },
+        {
+          title: 'TOURNAMENT CHAMPIONS',
+          desc: "We don't just participate; we compete to win. Our teams consistently bring home trophies from top-tier tournaments across the region.",
+        },
+        {
+          title: 'FIRST DIVISION TEAMS',
+          desc: 'Every single one of our age groups competes in the First Division of SCYSA, proving our commitment to elite-level development.',
+        },
       ],
     },
     faq: {
@@ -104,7 +112,7 @@ export const i18n = {
       items: [
         {
           q: 'How much does it cost to try out?',
-          a: 'Registration is completely free. There is no commitment or fee to apply.',
+          a: 'Registration is completely free. There is no commitment or fee to apply. However, if selected for a team, club fees and payment plans will be detailed in your offer letter via PlayMetrics.',
         },
         {
           q: 'What age groups can participate?',
@@ -124,7 +132,7 @@ export const i18n = {
         },
         {
           q: 'Who will be coaching the evaluation?',
-          a: 'BISA coaches led by Sports Director Paulo, with experience training athletes across 24 countries.',
+          a: 'BISA coaches led by Sports Director Paulo (PC), alongside our staff of 6 nationally certified coaches.',
         },
       ],
     },
@@ -284,6 +292,14 @@ export const i18n = {
           title: 'CAMINO COMPETITIVO',
           desc: 'Nuestros equipos compiten en la Carolina Premier League (CPL), con caminos a niveles superiores para atletas destacados.',
         },
+        {
+          title: 'CAMPEONES DE TORNEOS',
+          desc: 'No solo participamos; competimos para ganar. Nuestros equipos constantemente traen trofeos de torneos de primer nivel en toda la región.',
+        },
+        {
+          title: 'EQUIPOS DE PRIMERA DIVISIÓN',
+          desc: 'Todos y cada uno de nuestros grupos de edad compiten en la Primera División de SCYSA, demostrando nuestro compromiso con el desarrollo de nivel élite.',
+        },
       ],
     },
     faq: {
@@ -291,7 +307,7 @@ export const i18n = {
       items: [
         {
           q: '¿Cuánto cuesta hacer la prueba?',
-          a: 'El registro es completamente gratuito. No hay compromiso ni tarifa para aplicar.',
+          a: 'El registro es completamente gratuito. No hay compromiso ni tarifa para aplicar. Sin embargo, si es seleccionado para un equipo, las tarifas del club y los planes de pago se detallarán en su carta de oferta a través de PlayMetrics.',
         },
         {
           q: '¿Qué grupos de edad pueden participar?',
@@ -311,7 +327,7 @@ export const i18n = {
         },
         {
           q: '¿Quién estará a cargo de la evaluación?',
-          a: 'Entrenadores de BISA dirigidos por el Director Deportivo Paulo, con experiencia entrenando atletas en 24 países.',
+          a: 'Entrenadores de BISA dirigidos por el Director Deportivo Paulo (PC), junto con nuestro personal de 6 entrenadores certificados a nivel nacional.',
         },
       ],
     },
@@ -471,6 +487,14 @@ export const i18n = {
           title: 'CAMINHO COMPETITIVO',
           desc: 'Nossas equipes competem na Carolina Premier League (CPL), com caminhos para níveis mais altos para atletas de destaque.',
         },
+        {
+          title: 'CAMPEÕES DE TORNEOS',
+          desc: 'Não apenas participamos; competimos para vencer. Nossas equipes trazem consistentemente troféus de torneios de alto nível em toda a região.',
+        },
+        {
+          title: 'EQUIPES DE PRIMEIRA DIVISÃO',
+          desc: 'Todas as nossas faixas etárias competem na Primeira Divisão da SCYSA, provando nosso compromisso com o desenvolvimento de nível de elite.',
+        },
       ],
     },
     faq: {
@@ -478,7 +502,7 @@ export const i18n = {
       items: [
         {
           q: 'Quanto custa para participar da seletiva?',
-          a: 'A inscrição é totalmente gratuita. Não há compromisso ou taxa para se candidatar.',
+          a: 'A inscrição é totalmente gratuita. Não há compromisso ou taxa para se candidatar. No entanto, se selecionado para uma equipe, as taxas do clube e os planos de pagamento serão detalhados em sua carta de oferta via PlayMetrics.',
         },
         {
           q: 'Quais faixas etárias podem participar?',
@@ -498,7 +522,7 @@ export const i18n = {
         },
         {
           q: 'Quem estará avaliando?',
-          a: 'Treinadores da BISA liderados pelo Diretor Esportivo Paulo, com experiência treinando atletas em 24 países.',
+          a: 'Treinadores da BISA liderados pelo Diretor Esportivo Paulo (PC), juntamente com nossa equipe de 6 treinadores certificados nacionalmente.',
         },
       ],
     },

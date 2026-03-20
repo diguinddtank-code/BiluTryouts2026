@@ -32,7 +32,7 @@ export function RegistrationForm() {
   };
 
   return (
-    <section id="registration-section" className="py-12 sm:py-16 lg:py-24 bg-[#0a1a0a] text-white overflow-x-hidden border-t border-[#ccff00]/20">
+    <section id="registration-section" className="py-12 sm:py-16 bg-[#0a1f14] text-white overflow-x-hidden border-t border-[#ccff00]/20">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{opacity: 0, y: 24}}
@@ -61,8 +61,8 @@ export function RegistrationForm() {
           className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12"
         >
           {/* Step 1 */}
-          <motion.div variants={itemVariants} className="bg-[#122912] rounded-xl p-6 sm:p-8 border-t-2 border-[#ccff00] border-x border-b border-white/10 relative">
-            <div className="absolute -top-4 -left-4 w-10 h-10 bg-[#ccff00] text-[#0a1a0a] font-black text-xl rounded-full flex items-center justify-center shadow-lg">1</div>
+          <motion.div variants={itemVariants} className="bg-[#022c22] rounded-xl p-6 sm:p-8 border-t-2 border-[#ccff00] border-x border-b border-white/10 relative">
+            <div className="absolute -top-4 -left-4 w-10 h-10 bg-[#ccff00] text-[#0a1f14] font-black text-xl rounded-full flex items-center justify-center shadow-lg">1</div>
             <div className="flex items-center gap-3 mb-4 mt-2">
               <MousePointerClick className="w-6 h-6 text-[#ccff00]" />
               <h3 className="font-montserrat font-bold text-lg tracking-[0.08em] uppercase">{t.form.step1Title}</h3>
@@ -73,8 +73,8 @@ export function RegistrationForm() {
           </motion.div>
 
           {/* Step 2 */}
-          <motion.div variants={itemVariants} className="bg-[#122912] rounded-xl p-6 sm:p-8 border-t-2 border-[#ccff00] border-x border-b border-white/10 relative">
-            <div className="absolute -top-4 -left-4 w-10 h-10 bg-[#ccff00] text-[#0a1a0a] font-black text-xl rounded-full flex items-center justify-center shadow-lg">2</div>
+          <motion.div variants={itemVariants} className="bg-[#022c22] rounded-xl p-6 sm:p-8 border-t-2 border-[#ccff00] border-x border-b border-white/10 relative">
+            <div className="absolute -top-4 -left-4 w-10 h-10 bg-[#ccff00] text-[#0a1f14] font-black text-xl rounded-full flex items-center justify-center shadow-lg">2</div>
             <div className="flex items-center gap-3 mb-4 mt-2">
               <UserPlus className="w-6 h-6 text-[#ccff00]" />
               <h3 className="font-montserrat font-bold text-lg tracking-[0.08em] uppercase">{t.form.step2Title}</h3>
@@ -85,8 +85,8 @@ export function RegistrationForm() {
           </motion.div>
 
           {/* Step 3 */}
-          <motion.div variants={itemVariants} className="bg-[#122912] rounded-xl p-6 sm:p-8 border-t-2 border-[#ccff00] border-x border-b border-white/10 relative">
-            <div className="absolute -top-4 -left-4 w-10 h-10 bg-[#ccff00] text-[#0a1a0a] font-black text-xl rounded-full flex items-center justify-center shadow-lg">3</div>
+          <motion.div variants={itemVariants} className="bg-[#022c22] rounded-xl p-6 sm:p-8 border-t-2 border-[#ccff00] border-x border-b border-white/10 relative">
+            <div className="absolute -top-4 -left-4 w-10 h-10 bg-[#ccff00] text-[#0a1f14] font-black text-xl rounded-full flex items-center justify-center shadow-lg">3</div>
             <div className="flex items-center gap-3 mb-4 mt-2">
               <ShieldCheck className="w-6 h-6 text-[#ccff00]" />
               <h3 className="font-montserrat font-bold text-lg tracking-[0.08em] uppercase">{t.form.step3Title}</h3>
@@ -122,7 +122,7 @@ export function RegistrationForm() {
             rel="noopener noreferrer"
             whileHover={{scale: 1.02, filter: "brightness(1.1)"}}
             whileTap={{scale: 0.97}}
-            className="w-full flex items-center justify-center px-8 py-4 min-h-[60px] font-montserrat font-black text-lg tracking-[0.08em] uppercase text-[#0a1a0a] bg-[#ccff00] rounded-xl shadow-[0_4px_20px_rgba(204,255,0,0.3)] hover:shadow-[0_8px_30px_rgba(204,255,0,0.5)] transition-all duration-200 mb-6"
+            className="w-full flex items-center justify-center px-8 py-4 min-h-[60px] font-montserrat font-black text-lg tracking-[0.08em] uppercase text-[#0a1f14] bg-[#ccff00] rounded-xl shadow-[0_4px_20px_rgba(204,255,0,0.3)] hover:shadow-[0_8px_30px_rgba(204,255,0,0.5)] transition-all duration-200 mb-6"
           >
             {t.form.redirectCta}
           </motion.a>

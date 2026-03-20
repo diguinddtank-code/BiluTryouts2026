@@ -50,7 +50,7 @@ export function Hero() {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center pt-20 sm:pt-28 md:pt-40 pb-16 sm:pb-24 overflow-hidden">
+    <section className="relative z-0 min-h-screen flex flex-col items-center justify-center pt-20 sm:pt-28 md:pt-40 pb-8 sm:pb-12 overflow-hidden">
       {/* Background Video */}
       <video 
         autoPlay 
@@ -74,18 +74,6 @@ export function Hero() {
         >
           BISA
         </motion.span>
-      </div>
-
-      {/* BISA Watermark Logo */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[60%] opacity-[0.02] pointer-events-none -z-10">
-        <Image
-          src="https://bilusoccer.com/wp-content/uploads/2025/03/h2-3.png"
-          alt=""
-          width={400}
-          height={400}
-          unoptimized={true}
-          className="w-[180px] h-[180px] sm:w-[300px] sm:h-[300px] object-contain"
-        />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center flex flex-col items-center flex-grow justify-center w-full pt-10 sm:pt-0">
@@ -194,7 +182,7 @@ export function Hero() {
       {/* Trust Strip Marquee */}
       <div className="w-full bg-white/[0.03] border-y border-white/[0.06] py-4 overflow-hidden flex">
         <div className="flex whitespace-nowrap animate-marquee hover:[animation-play-state:paused] items-center">
-          {[...t.trustStrip, ...t.trustStrip, ...t.trustStrip, ...t.trustStrip].map((item, i) => (
+          {[...t.trustStrip, ...t.trustStrip, ...t.trustStrip, ...t.trustStrip, ...t.trustStrip, ...t.trustStrip].map((item, i) => (
             <div key={i} className="flex items-center text-white/60 font-medium text-[11px] sm:text-[12px] uppercase tracking-[0.08em] px-5 sm:px-8 gap-2">
               {marqueeIcons[i % marqueeIcons.length]}
               {item}

@@ -32,7 +32,7 @@ export function About() {
   const {t} = useLanguage();
 
   return (
-    <section className="py-24 bg-[#0d1f0d] text-white overflow-x-hidden">
+    <section className="py-12 sm:py-16 bg-[#0a1f14] text-white overflow-x-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <motion.div
@@ -44,7 +44,7 @@ export function About() {
           >
             <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
               <span className="font-montserrat font-black text-5xl sm:text-6xl text-[#ccff00] mb-2">
-                <Counter from={0} to={24} />
+                <Counter from={0} to={6} />+
               </span>
               <span className="text-xs sm:text-sm font-semibold text-white/50 uppercase tracking-[0.08em]">
                 {t.about.stats.countries}
@@ -88,11 +88,11 @@ export function About() {
             </p>
             
             <div className="flex items-center gap-6 pt-8 border-t border-white/10">
-              <div className="h-12 w-auto opacity-50 grayscale hover:grayscale-0 transition-all">
+              <div className="h-12 w-auto opacity-50 hover:opacity-100 transition-all">
                 {/* Placeholder for SC Youth Soccer logo */}
                 <div className="font-montserrat font-bold text-sm tracking-widest text-white">SC YOUTH SOCCER</div>
               </div>
-              <div className="h-12 w-auto opacity-50 grayscale hover:grayscale-0 transition-all">
+              <div className="h-12 w-auto opacity-50 hover:opacity-100 transition-all">
                 {/* Placeholder for CPL logo */}
                 <div className="font-montserrat font-bold text-sm tracking-widest text-white">CAROLINA PREMIER LEAGUE</div>
               </div>

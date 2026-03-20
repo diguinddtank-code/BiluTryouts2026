@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 export function LogoDivider() {
   return (
-    <div className="w-full bg-[#0a1a0a] py-12 flex items-center justify-center overflow-hidden">
+    <div className="w-full bg-[#0a1f14] py-12 flex items-center justify-center overflow-hidden">
       <div className="max-w-5xl w-full mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-center">
         <div className="flex-grow h-[1px] bg-gradient-to-r from-transparent via-[#ccff00]/50 to-[#ccff00]/50 max-w-[200px]" />
         

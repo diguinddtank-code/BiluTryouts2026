@@ -14,7 +14,7 @@ export function LocationSchedule() {
   const {t} = useLanguage();
 
   return (
-    <section id="schedule" className="py-24 bg-[#122912] text-white overflow-x-hidden">
+    <section id="schedule" className="py-12 sm:py-16 bg-[#0a1f14] text-white overflow-x-hidden">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{opacity: 0, y: 40}}

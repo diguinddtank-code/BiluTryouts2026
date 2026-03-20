@@ -45,12 +45,12 @@
   }
 
   .animate-marquee {
-    animation: marquee 25s linear infinite;
+    animation: marquee 100s linear infinite;
   }
 
   @media (min-width: 640px) {
     .animate-marquee {
-      animation-duration: 40s;
+      animation-duration: 160s;
     }
   }
 }

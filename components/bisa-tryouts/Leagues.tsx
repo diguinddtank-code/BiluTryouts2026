@@ -30,10 +30,10 @@ export function Leagues() {
     { type: 'text', text: 'CPL' },
   ];
 
-  const marqueeItems = [...logos, ...logos];
+  const marqueeItems = [...logos, ...logos, ...logos, ...logos, ...logos, ...logos];
 
   return (
-    <section className="py-16 lg:py-24 bg-[#081508] text-white overflow-hidden border-y border-[#ccff00]/20 relative">
+    <section className="py-12 sm:py-16 bg-[#0a1f14] text-white overflow-hidden border-y border-[#ccff00]/20 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
           initial={{opacity: 0, y: 24}}
@@ -52,6 +52,35 @@ export function Leagues() {
           <p className="text-lg sm:text-xl text-white/80 font-light leading-relaxed max-w-3xl mx-auto">
             {t.leagues.subheadline}
           </p>
+        </motion.div>
+
+        {/* NEW STATEMENT STRIP */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          className="w-full bg-[#022c22] border border-white/10 rounded-2xl p-6 sm:p-10 mb-16 flex flex-col md:flex-row items-center justify-between gap-8"
+        >
+          <div className="flex flex-col items-center md:items-start text-center md:text-left">
+            <h3 className="font-montserrat font-black text-3xl sm:text-4xl lg:text-5xl text-white uppercase leading-none tracking-tight mb-2">
+              FIRST DIVISION.
+            </h3>
+            <h3 className="font-montserrat font-black text-3xl sm:text-4xl lg:text-5xl text-white/40 uppercase leading-none tracking-tight mb-4">
+              EVERY CATEGORY.
+            </h3>
+            <p className="text-[#ccff00] font-bold text-sm sm:text-base tracking-widest uppercase">
+              COMPETING AT THE HIGHEST LEVEL IN SCYSA
+            </p>
+          </div>
+          
+          <div className="flex flex-wrap justify-center md:justify-end gap-3">
+            {['U13', 'U14', 'U15', 'U16', 'U17', 'U19'].map((age) => (
+              <div key={age} className="px-4 py-2 bg-white/5 border border-white/10 rounded-lg font-montserrat font-bold text-white/80 text-sm sm:text-base">
+                {age}
+              </div>
+            ))}
+          </div>
         </motion.div>
 
         <motion.div
@@ -113,10 +142,10 @@ export function Leagues() {
       </div>
 
       {/* Marquee Strip */}
-      <div className="relative w-full overflow-hidden bg-[#0a1a0a] py-8 border-y border-white/5">
+      <div className="relative w-full overflow-hidden bg-[#0a1f14] py-8 border-y border-white/5">
         {/* Gradient Masks for smooth fade on edges */}
-        <div className="absolute inset-y-0 left-0 w-16 sm:w-32 bg-gradient-to-r from-[#0a1a0a] to-transparent z-10 pointer-events-none" />
-        <div className="absolute inset-y-0 right-0 w-16 sm:w-32 bg-gradient-to-l from-[#0a1a0a] to-transparent z-10 pointer-events-none" />
+        <div className="absolute inset-y-0 left-0 w-16 sm:w-32 bg-gradient-to-r from-[#0a1f14] to-transparent z-10 pointer-events-none" />
+        <div className="absolute inset-y-0 right-0 w-16 sm:w-32 bg-gradient-to-l from-[#0a1f14] to-transparent z-10 pointer-events-none" />
         
         <div className="flex w-max animate-marquee hover:[animation-play-state:paused] items-center">
           {marqueeItems.map((item, index) => (

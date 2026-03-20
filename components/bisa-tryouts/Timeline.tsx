@@ -7,7 +7,7 @@ export function Timeline() {
   const {t} = useLanguage();
 
   return (
-    <section className="py-24 bg-[#0d1f0d] text-white overflow-x-hidden">
+    <section className="py-12 sm:py-16 bg-[#022c22] text-white overflow-x-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{opacity: 0, y: 40}}
@@ -51,7 +51,7 @@ export function Timeline() {
                 }`}
               >
                 {/* Number Circle */}
-                <div className="absolute left-0 md:left-1/2 w-10 h-10 sm:w-14 sm:h-14 bg-[#ccff00] rounded-full border-2 sm:border-4 border-[#0d1f0d] flex items-center justify-center font-montserrat font-black text-base sm:text-xl text-[#0a1f14] z-10 md:-translate-x-1/2 shadow-lg">
+                <div className="absolute left-0 md:left-1/2 w-10 h-10 sm:w-14 sm:h-14 bg-[#ccff00] rounded-full border-2 sm:border-4 border-[#022c22] flex items-center justify-center font-montserrat font-black text-base sm:text-xl text-[#0a1f14] z-10 md:-translate-x-1/2 shadow-lg">
                   {i + 1}
                 </div>
 

@@ -14,11 +14,13 @@ import {FAQ} from '@/components/bisa-tryouts/FAQ';
 import {RegistrationForm} from '@/components/bisa-tryouts/RegistrationForm';
 import {Footer} from '@/components/bisa-tryouts/Footer';
 
+// New Components
+import { CoachesGrid } from '@/components/CoachesGrid';
+import { ClubGallery } from '@/components/ClubGallery';
+
 // Scrollytelling Components
 import { ScrollProgress } from '@/components/scrollytelling/ScrollProgress';
 import { WorldLanguages } from '@/components/scrollytelling/WorldLanguages';
-import { AnimatedStats } from '@/components/scrollytelling/AnimatedStats';
-import { ProjetoBilu } from '@/components/scrollytelling/ProjetoBilu';
 import { EpicCta } from '@/components/scrollytelling/EpicCta';
 
 export default function Page() {
@@ -35,7 +37,7 @@ export default function Page() {
 
   return (
     <LanguageProvider>
-      <div className="min-h-screen flex flex-col font-outfit bg-[#080808] text-[#F5F5F5] selection:bg-[#D0021B] selection:text-white overflow-x-hidden">
+      <div className="min-h-screen flex flex-col font-outfit bg-[#022c22] text-[#F5F5F5] selection:bg-[#ccff00] selection:text-[#0a1f14] overflow-x-hidden">
         <ScrollProgress />
         <Navbar />
         <main className="flex-grow">
@@ -43,11 +45,10 @@ export default function Page() {
           
           {/* Scrollytelling Narrative Starts Here */}
           <WorldLanguages />
-          <AnimatedStats />
           
           <About />
-          
-          <ProjetoBilu />
+          <ClubGallery />
+          <CoachesGrid />
           
           <LogoDivider />
           <Leagues />

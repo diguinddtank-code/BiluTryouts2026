@@ -31,12 +31,12 @@ export function ScrollProgress() {
       `}} />
       
       <div 
-        className="h-full bg-[#D0021B] relative"
+        className="h-full bg-[#ccff00] relative"
         style={{ width: `${progress * 100}%` }}
       >
         {/* Leading Dot with Sonar */}
-        <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[6px] h-[6px] bg-[#D0021B] translate-x-1/2">
-          <div className="absolute inset-0 border-[1.5px] border-[#D0021B] animate-progress-sonar" />
+        <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[6px] h-[6px] bg-[#ccff00] translate-x-1/2">
+          <div className="absolute inset-0 border-[1.5px] border-[#ccff00] animate-progress-sonar" />
         </div>
       </div>
     </div>
