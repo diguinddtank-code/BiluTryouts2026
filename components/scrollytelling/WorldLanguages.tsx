@@ -62,7 +62,7 @@ export function WorldLanguages() {
             transitionDelay: '100ms'
           }}
         >
-          // THE WORLD TRAINS HERE
+          {`// THE WORLD TRAINS HERE`}
         </span>
 
         <h2 className="font-montserrat font-black text-[clamp(44px,10vw,130px)] leading-[0.85] tracking-tight flex flex-col items-center mb-8">
@@ -172,7 +172,7 @@ export function WorldLanguages() {
             </div>
             <div className="flex flex-col">
               <span className="font-montserrat font-black text-4xl sm:text-5xl text-[#ccff00] mb-1">
-                U7-U19
+                U7-U17
               </span>
               <span className="text-[10px] sm:text-xs font-semibold text-white/50 uppercase tracking-[0.08em] leading-tight">
                 {t.about.stats.ages}

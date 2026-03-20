@@ -22,7 +22,7 @@ export function Testimonials() {
           className="text-center"
         >
           <span className="font-montserrat font-bold text-[11px] tracking-[6px] text-[#ccff00] uppercase mb-4 block">
-            // {t.testimonials.headline}
+            {`// ${t.testimonials.headline}`}
           </span>
           <h2 className="font-montserrat font-black text-[clamp(2rem,5vw,4rem)] leading-[0.9] tracking-tighter uppercase text-white drop-shadow-2xl">
             {t.testimonials.subheadline}
@@ -57,7 +57,7 @@ export function Testimonials() {
 
                 {/* Text */}
                 <p className="font-outfit font-light text-white/80 text-base sm:text-lg leading-relaxed italic mb-8 relative z-10">
-                  "{item.quote}"
+                  &quot;{item.quote}&quot;
                 </p>
               </div>
 

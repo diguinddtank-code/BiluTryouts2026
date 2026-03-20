@@ -17,7 +17,7 @@ export const i18n = {
         'Individual feedback within 48 hours',
         'No pressure. Just a real opportunity.'
       ],
-      pills: ['Ages U7–U19', 'Boys & Girls'],
+      pills: ['Ages U7–U17', 'Boys & Girls'],
       cta: 'REGISTER MY CHILD NOW →',
       microcopy: 'Secure your spot today · Limited availability',
       secondaryLink: '↓ See Schedule & Location',
@@ -32,7 +32,7 @@ export const i18n = {
       'Athletes from 19+ Countries',
       'Ladson, South Carolina',
       'Carolina Premier League',
-      'U7 through U19',
+      'U7 through U17',
       'Elite Development',
       'Limited Spots Available'
     ],
@@ -111,7 +111,7 @@ export const i18n = {
       items: [
         {
           q: 'What age groups can participate?',
-          a: 'BISA accepts players from U7 through U19, boys and girls.',
+          a: 'BISA accepts players from U7 through U17, boys and girls.',
         },
         {
           q: 'What should my child bring?',
@@ -234,7 +234,7 @@ export const i18n = {
         'Comentarios individuales en 48 horas',
         'Sin presión. Solo una oportunidad real.'
       ],
-      pills: ['Edades U7–U19', 'Niños y Niñas'],
+      pills: ['Edades U7–U17', 'Niños y Niñas'],
       cta: 'REGISTRAR A MI HIJO AHORA →',
       microcopy: 'Asegura tu lugar hoy · Disponibilidad limitada',
       secondaryLink: '↓ Ver Horario y Ubicación',
@@ -249,7 +249,7 @@ export const i18n = {
       'Atletas de más de 19 Países',
       'Ladson, South Carolina',
       'Carolina Premier League',
-      'U7 hasta U19',
+      'U7 hasta U17',
       'Desarrollo de Élite',
       'Cupos Limitados Disponibles'
     ],
@@ -328,7 +328,7 @@ export const i18n = {
       items: [
         {
           q: '¿Qué grupos de edad pueden participar?',
-          a: 'BISA acepta jugadores desde U7 hasta U19, niños y niñas.',
+          a: 'BISA acepta jugadores desde U7 hasta U17, niños y niñas.',
         },
         {
           q: '¿Qué debe traer mi hijo/a?',
@@ -451,7 +451,7 @@ export const i18n = {
         'Feedback individual em 48 horas',
         'Sem pressão. Apenas uma oportunidade real.'
       ],
-      pills: ['Idades U7–U19', 'Meninos e Meninas'],
+      pills: ['Idades U7–U17', 'Meninos e Meninas'],
       cta: 'INSCREVER MEU FILHO AGORA →',
       microcopy: 'Garanta sua vaga hoje · Disponibilidade limitada',
       secondaryLink: '↓ Ver Horário e Local',
@@ -466,7 +466,7 @@ export const i18n = {
       'Atletas de mais de 19 Países',
       'Ladson, Carolina do Sul',
       'Carolina Premier League',
-      'U7 até U19',
+      'U7 até U17',
       'Desenvolvimento de Elite',
       'Vagas Limitadas Disponíveis'
     ],
@@ -545,7 +545,7 @@ export const i18n = {
       items: [
         {
           q: 'Quais faixas etárias podem participar?',
-          a: 'A BISA aceita jogadores do U7 ao U19, meninos e meninas.',
+          a: 'A BISA aceita jogadores do U7 ao U17, meninos e meninas.',
         },
         {
           q: 'O que meu filho(a) deve levar?',

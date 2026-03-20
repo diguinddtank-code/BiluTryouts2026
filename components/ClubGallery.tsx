@@ -43,7 +43,7 @@ export function ClubGallery() {
           className="text-center mb-16"
         >
           <span className="font-montserrat font-bold text-[11px] tracking-[6px] text-[#ccff00] uppercase mb-6 block">
-            // CLUB LIFE
+            {`// CLUB LIFE`}
           </span>
           <h2 className="font-montserrat font-black text-[clamp(2.5rem,7vw,5.5rem)] leading-[0.85] tracking-tighter uppercase text-white mb-8 italic drop-shadow-2xl flex flex-col items-center">
             <span className="block">MORE THAN A TEAM.</span>

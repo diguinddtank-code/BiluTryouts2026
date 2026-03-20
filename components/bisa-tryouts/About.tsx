@@ -52,7 +52,7 @@ export function About() {
             </div>
             <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
               <span className="font-montserrat font-black text-5xl sm:text-6xl text-[#ccff00] mb-2">
-                U7-U19
+                U7-U17
               </span>
               <span className="text-xs sm:text-sm font-semibold text-white/50 uppercase tracking-[0.08em]">
                 {t.about.stats.ages}
