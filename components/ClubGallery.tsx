@@ -47,15 +47,14 @@ export function ClubGallery() {
           transition={{duration: 0.7}}
           className="text-center mb-16"
         >
-          <div className="inline-flex items-center gap-2 mb-4">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#ccff00]" />
-            <span className="text-[11px] font-bold text-[#ccff00] uppercase tracking-[0.2em]">CLUB LIFE</span>
-          </div>
-          <h2 className="font-montserrat font-black text-4xl sm:text-5xl lg:text-6xl tracking-tighter uppercase text-white mb-4 leading-none">
-            MORE THAN A TEAM.
-            <br className="hidden sm:block" />
-            <span className="text-white/40"> A FAMILY.</span>
+          <span className="font-montserrat font-bold text-[11px] tracking-[6px] text-[#ccff00] uppercase mb-6 block">
+            // CLUB LIFE
+          </span>
+          <h2 className="font-montserrat font-black text-[clamp(2.5rem,7vw,5.5rem)] leading-[0.85] tracking-tighter uppercase text-white mb-8 italic drop-shadow-2xl flex flex-col items-center">
+            <span className="block">MORE THAN A TEAM.</span>
+            <span className="block text-[#ccff00] drop-shadow-[0_0_30px_rgba(204,255,0,0.3)]">A FAMILY.</span>
           </h2>
+          <div className="w-16 h-1 bg-[#ccff00] rounded-full shadow-[0_0_10px_rgba(204,255,0,0.5)] mx-auto"></div>
         </motion.div>
 
         <div className="grid grid-cols-2 sm:grid-cols-4 auto-rows-[150px] sm:auto-rows-[250px] lg:auto-rows-[300px] gap-2 sm:gap-4">

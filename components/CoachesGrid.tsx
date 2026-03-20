@@ -8,8 +8,8 @@ export function CoachesGrid() {
     name: 'Coach PC',
     role: 'Sports Director',
     photo: 'https://i.imgur.com/2yYRzpU.png',
-    bio: 'Former professional player with over 15 years of international coaching experience across 24 countries. Dedicated to developing elite youth talent.',
-    badges: ['UEFA A License', '24 Countries']
+    bio: 'Former professional player with over 15 years of international coaching experience. Dedicated to developing elite youth talent.',
+    badges: ['UEFA A License', 'Global Experience']
   };
 
   const staffCoaches = [
@@ -40,16 +40,15 @@ export function CoachesGrid() {
           transition={{duration: 0.7}}
           className="text-center mb-16"
         >
-          <div className="inline-flex items-center gap-2 mb-4">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#ccff00]" />
-            <span className="text-[11px] font-bold text-[#ccff00] uppercase tracking-[0.2em]">OUR COACHING STAFF</span>
-          </div>
-          <h2 className="font-montserrat font-black text-4xl sm:text-5xl lg:text-6xl tracking-tighter uppercase text-white mb-4 leading-none">
-            NATIONALLY CERTIFIED.
-            <br className="hidden sm:block" />
-            <span className="text-white/40"> GLOBALLY EXPERIENCED.</span>
+          <span className="font-montserrat font-bold text-[11px] tracking-[6px] text-[#ccff00] uppercase mb-6 block">
+            // OUR COACHING STAFF
+          </span>
+          <h2 className="font-montserrat font-black text-[clamp(2.5rem,7vw,5.5rem)] leading-[0.85] tracking-tighter uppercase text-white mb-8 italic drop-shadow-2xl flex flex-col items-center">
+            <span className="block">NATIONALLY CERTIFIED.</span>
+            <span className="block text-[#ccff00] drop-shadow-[0_0_30px_rgba(204,255,0,0.3)]">GLOBALLY EXPERIENCED.</span>
           </h2>
-          <p className="text-lg sm:text-xl text-white/80 font-light leading-relaxed max-w-3xl mx-auto">
+          <div className="w-16 h-1 bg-[#ccff00] rounded-full shadow-[0_0_10px_rgba(204,255,0,0.5)] mx-auto mb-8"></div>
+          <p className="text-lg sm:text-xl text-white/70 font-light leading-relaxed max-w-3xl mx-auto">
             Every BISA coach holds national certifications and shares a unified philosophy of player development.
           </p>
         </motion.div>
@@ -97,7 +96,7 @@ export function CoachesGrid() {
           </motion.div>
 
           {/* Staff Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {staffCoaches.map((coach, i) => (
               <motion.div
                 key={i}
@@ -105,9 +104,9 @@ export function CoachesGrid() {
                 whileInView={{opacity: 1, y: 0}}
                 viewport={{once: true, margin: '-100px'}}
                 transition={{duration: 0.5, delay: (i + 1) * 0.15}}
-                className="group relative bg-[#022c22] rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500"
+                className="group relative bg-[#022c22] rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 flex flex-row sm:flex-col border border-white/5 sm:border-none"
               >
-                <div className="relative w-full aspect-[3/4] overflow-hidden">
+                <div className="relative w-28 sm:w-full aspect-square sm:aspect-[3/4] overflow-hidden shrink-0">
                   <Image
                     src={coach.photo}
                     alt={coach.name}
@@ -115,14 +114,14 @@ export function CoachesGrid() {
                     className="object-cover object-top transition-all duration-700 scale-100 group-hover:scale-105"
                     referrerPolicy="no-referrer"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#022c22] via-transparent to-transparent opacity-80 group-hover:opacity-60 transition-opacity duration-500" />
+                  <div className="hidden sm:block absolute inset-0 bg-gradient-to-t from-[#022c22] via-transparent to-transparent opacity-80 group-hover:opacity-60 transition-opacity duration-500" />
                 </div>
                 
-                <div className="absolute bottom-0 left-0 w-full p-6 z-10">
-                  <h3 className="font-montserrat font-black text-2xl uppercase text-white mb-1 tracking-tight">
+                <div className="flex flex-col justify-center p-5 sm:p-6 sm:absolute sm:bottom-0 sm:left-0 sm:w-full sm:z-10">
+                  <h3 className="font-montserrat font-black text-lg sm:text-2xl uppercase text-white mb-1 tracking-tight leading-tight">
                     {coach.name}
                   </h3>
-                  <p className="text-[#ccff00] font-bold text-xs uppercase tracking-widest">
+                  <p className="text-[#ccff00] font-bold text-[10px] sm:text-xs uppercase tracking-widest">
                     {coach.role}
                   </p>
                 </div>

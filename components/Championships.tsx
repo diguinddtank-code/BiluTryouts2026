@@ -32,16 +32,15 @@ export function Championships() {
           transition={{duration: 0.7}}
           className="text-center mb-16"
         >
-          <div className="inline-flex items-center gap-2 mb-4">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#ccff00]" />
-            <span className="text-[11px] font-bold text-[#ccff00] uppercase tracking-[0.2em]">CHAMPIONSHIP PEDIGREE</span>
-          </div>
-          <h2 className="font-montserrat font-black text-4xl sm:text-5xl lg:text-6xl tracking-tighter uppercase text-white mb-4 leading-none">
-            WE DON&apos;T JUST PLAY.
-            <br className="hidden sm:block" />
-            <span className="text-white/40"> WE COMPETE.</span>
+          <span className="font-montserrat font-bold text-[11px] tracking-[6px] text-[#ccff00] uppercase mb-6 block">
+            // CHAMPIONSHIP PEDIGREE
+          </span>
+          <h2 className="font-montserrat font-black text-[clamp(2.5rem,7vw,5.5rem)] leading-[0.85] tracking-tighter uppercase text-white mb-8 italic drop-shadow-2xl flex flex-col items-center">
+            <span className="block">WE DON&apos;T JUST PLAY.</span>
+            <span className="block text-[#ccff00] drop-shadow-[0_0_30px_rgba(204,255,0,0.3)]">WE COMPETE.</span>
           </h2>
-          <p className="text-lg sm:text-xl text-white/80 font-light leading-relaxed max-w-3xl mx-auto">
+          <div className="w-16 h-1 bg-[#ccff00] rounded-full shadow-[0_0_10px_rgba(204,255,0,0.5)] mx-auto mb-8"></div>
+          <p className="text-lg sm:text-xl text-white/70 font-light leading-relaxed max-w-3xl mx-auto">
             BISA teams consistently perform at the highest levels of youth soccer in South Carolina.
           </p>
         </motion.div>

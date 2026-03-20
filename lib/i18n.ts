@@ -29,7 +29,7 @@ export const i18n = {
     },
     trustStrip: [
       '4.9/5 Parent Rating',
-      'Coaches from 24 Countries',
+      'Athletes from 19+ Countries',
       'Ladson, South Carolina',
       'Carolina Premier League',
       'U7 through U19',
@@ -43,7 +43,7 @@ export const i18n = {
         cpl: 'Carolina Premier League',
         sc: 'South Carolina based',
       },
-      paragraph: 'BILU International Soccer Academy is built on global experience. Led by Sports Director Paulo, who has trained athletes across 24 countries, BISA brings world-class methodology to the Metro Charleston Area. We develop players of all ages — technically, tactically, and as people.',
+      paragraph: 'BILU International Soccer Academy is built on global experience. Led by Sports Director Paulo, who has trained athletes from over 19 countries, BISA brings world-class methodology to the Metro Charleston Area. We develop players of all ages — technically, tactically, and as people.',
     },
     leagues: {
       headline: 'Where We Compete',
@@ -86,7 +86,7 @@ export const i18n = {
       cards: [
         {
           title: 'GLOBAL METHODOLOGY',
-          desc: 'Coaching philosophy built from 24 countries of experience, brought to South Carolina.',
+          desc: 'Coaching philosophy built from global experience, brought to South Carolina.',
         },
         {
           title: 'INDIVIDUAL DEVELOPMENT',
@@ -158,11 +158,42 @@ export const i18n = {
       copyright: '© 2026 BILU International Soccer Academy · Ladson, South Carolina',
       affiliate: 'SC Youth Soccer Affiliate',
     },
+    testimonials: {
+      headline: 'WHAT PARENTS SAY',
+      subheadline: 'Hear from the families that trust BISA with their development.',
+      items: [
+        {
+          quote: "The best soccer academy in Charleston. My son has improved technically and gained so much confidence.",
+          author: "Sarah M.",
+          role: "Parent of U12 Player"
+        },
+        {
+          quote: "Coach PC's methodology is unmatched. They don't just teach soccer; they build character.",
+          author: "David R.",
+          role: "Parent of U15 Player"
+        },
+        {
+          quote: "A true international experience. The level of training is incredibly high and the environment is fantastic.",
+          author: "Elena G.",
+          role: "Parent of U10 Player"
+        },
+        {
+          quote: "Since joining BISA, my daughter's tactical understanding of the game has skyrocketed. Highly recommended!",
+          author: "Michael T.",
+          role: "Parent of U14 Player"
+        },
+        {
+          quote: "More than a club, it's a family. The dedication of the coaches to each individual player is amazing.",
+          author: "Jessica W.",
+          role: "Parent of U9 Player"
+        }
+      ]
+    },
     worldLanguages: {
       label: 'EVERYONE IS WELCOME HERE',
       headline1: 'THE WORLD',
       headline2: 'TRAINS HERE',
-      sub: 'Our coaches and athletes speak over 12 languages. Portuguese, English, Spanish, French, Creole, and more. Soccer is the only language that matters.',
+      sub: 'Our athletes come from over 19 countries. Portuguese, English, Spanish, French, Creole, and more. Soccer is the only language that matters.',
     },
     projetoBilu: {
       label: 'BEYOND THE PITCH',
@@ -223,7 +254,7 @@ export const i18n = {
     },
     trustStrip: [
       '4.9/5 Calificación de Padres',
-      'Entrenadores de 24 Países',
+      'Atletas de más de 19 Países',
       'Ladson, South Carolina',
       'Carolina Premier League',
       'U7 hasta U19',
@@ -237,7 +268,7 @@ export const i18n = {
         cpl: 'Carolina Premier League',
         sc: 'Basado en South Carolina',
       },
-      paragraph: 'BILU International Soccer Academy se basa en experiencia global. Dirigida por el Director Deportivo Paulo, quien ha entrenado atletas en 24 países, BISA trae una metodología de clase mundial al área metropolitana de Charleston. Desarrollamos jugadores de todas las edades: técnica, táctica y personalmente.',
+      paragraph: 'BILU International Soccer Academy se basa en experiencia global. Dirigida por el Director Deportivo Paulo, quien ha entrenado atletas de más de 19 países, BISA trae una metodología de clase mundial al área metropolitana de Charleston. Desarrollamos jugadores de todas las edades: técnica, táctica y personalmente.',
     },
     leagues: {
       headline: 'Dónde Competimos',
@@ -280,7 +311,7 @@ export const i18n = {
       cards: [
         {
           title: 'METODOLOGÍA GLOBAL',
-          desc: 'Filosofía de entrenamiento construida a partir de la experiencia en 24 países, traída a South Carolina.',
+          desc: 'Filosofía de entrenamiento construida a partir de la experiencia global, traída a South Carolina.',
         },
         {
           title: 'DESARROLLO INDIVIDUAL',
@@ -352,11 +383,42 @@ export const i18n = {
       copyright: '© 2026 BILU International Soccer Academy · Ladson, South Carolina',
       affiliate: 'Afiliado a SC Youth Soccer',
     },
+    testimonials: {
+      headline: 'LO QUE DICEN LOS PADRES',
+      subheadline: 'Escucha a las familias que confían en BISA para su desarrollo.',
+      items: [
+        {
+          quote: "La mejor academia de fútbol en Charleston. Mi hijo ha mejorado tecnicamente y ha ganado mucha confianza.",
+          author: "Sarah M.",
+          role: "Madre de jugador U12"
+        },
+        {
+          quote: "La metodología del Coach PC es inigualable. No solo enseñan fútbol; construyen carácter.",
+          author: "David R.",
+          role: "Padre de jugador U15"
+        },
+        {
+          quote: "Una verdadera experiencia internacional. El nivel de entrenamiento es increíblemente alto y el ambiente es fantástico.",
+          author: "Elena G.",
+          role: "Madre de jugador U10"
+        },
+        {
+          quote: "Desde que se unió a BISA, la comprensión táctica del juego de mi hija se ha disparado. ¡Muy recomendado!",
+          author: "Michael T.",
+          role: "Padre de jugadora U14"
+        },
+        {
+          quote: "Más que un club, es una familia. La dedicación de los entrenadores a cada jugador individual es asombrosa.",
+          author: "Jessica W.",
+          role: "Madre de jugador U9"
+        }
+      ]
+    },
     worldLanguages: {
       label: 'TODOS SON BIENVENIDOS AQUÍ',
       headline1: 'EL MUNDO',
       headline2: 'ENTRENA AQUÍ',
-      sub: 'Nuestros atletas hablan más de 12 idiomas. El fútbol es el único idioma que importa.',
+      sub: 'Nuestros atletas provienen de más de 19 países. El fútbol es el único idioma que importa.',
     },
     projetoBilu: {
       label: 'MÁS ALLÁ DE LA CANCHA',
@@ -417,7 +479,7 @@ export const i18n = {
     },
     trustStrip: [
       '4.9/5 Avaliação dos Pais',
-      'Treinadores de 24 Países',
+      'Atletas de mais de 19 Países',
       'Ladson, Carolina do Sul',
       'Carolina Premier League',
       'U7 até U19',
@@ -431,7 +493,7 @@ export const i18n = {
         cpl: 'Carolina Premier League',
         sc: 'Sediado na Carolina do Sul',
       },
-      paragraph: 'A BILU International Soccer Academy é construída com experiência global. Liderada pelo Diretor Esportivo Paulo, que treinou atletas em 24 países, a BISA traz uma metodologia de classe mundial para a região metropolitana de Charleston. Desenvolvemos jogadores de todas as idades — técnica, tática e pessoalmente.',
+      paragraph: 'A BILU International Soccer Academy é construída com experiência global. Liderada pelo Diretor Esportivo Paulo, que treinou atletas de mais de 19 países, a BISA traz uma metodologia de classe mundial para a região metropolitana de Charleston. Desenvolvemos jogadores de todas as idades — técnica, tática e pessoalmente.',
     },
     leagues: {
       headline: 'Onde Competimos',
@@ -474,7 +536,7 @@ export const i18n = {
       cards: [
         {
           title: 'METODOLOGIA GLOBAL',
-          desc: 'Filosofia de treinamento construída a partir de la experiência em 24 países, trazida para a Carolina do Sul.',
+          desc: 'Filosofia de treinamento construída a partir de experiência global, trazida para a Carolina do Sul.',
         },
         {
           title: 'DESENVOLVIMENTO INDIVIDUAL',
@@ -546,11 +608,42 @@ export const i18n = {
       copyright: '© 2026 BILU International Soccer Academy · Ladson, Carolina do Sul',
       affiliate: 'Afiliado ao SC Youth Soccer',
     },
+    testimonials: {
+      headline: 'O QUE OS PAIS DIZEM',
+      subheadline: 'Ouça as famílias que confiam na BISA para o seu desenvolvimento.',
+      items: [
+        {
+          quote: "A melhor academia de futebol em Charleston. Meu filho melhorou tecnicamente e ganhou muita confiança.",
+          author: "Sarah M.",
+          role: "Mãe de jogador U12"
+        },
+        {
+          quote: "A metodologia do Coach PC é incomparável. Eles não ensinam apenas futebol; eles constroem caráter.",
+          author: "David R.",
+          role: "Pai de jogador U15"
+        },
+        {
+          quote: "Uma verdadeira experiência internacional. O nível de treinamento é incrivelmente alto e o ambiente é fantástico.",
+          author: "Elena G.",
+          role: "Mãe de jogador U10"
+        },
+        {
+          quote: "Desde que entrou na BISA, a compreensão tática do jogo da minha filha disparou. Altamente recomendado!",
+          author: "Michael T.",
+          role: "Pai de jogadora U14"
+        },
+        {
+          quote: "Mais que um clube, é uma família. A dedicação dos treinadores a cada jogador individualmente é incrível.",
+          author: "Jessica W.",
+          role: "Mãe de jogador U9"
+        }
+      ]
+    },
     worldLanguages: {
       label: 'TODOS SÃO BEM-VINDOS AQUI',
       headline1: 'O MUNDO',
       headline2: 'TREINA AQUI',
-      sub: 'Nossos atletas falam mais de 12 idiomas. O futebol é o único idioma que importa.',
+      sub: 'Nossos atletas vêm de mais de 19 países. O futebol é o único idioma que importa.',
     },
     projetoBilu: {
       label: 'ALÉM DO CAMPO',

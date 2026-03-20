@@ -17,6 +17,7 @@ import {FloatingCTA} from '@/components/bisa-tryouts/FloatingCTA';
 // New Components
 import { CoachesGrid } from '@/components/CoachesGrid';
 import { ClubGallery } from '@/components/ClubGallery';
+import { Testimonials } from '@/components/Testimonials';
 
 // Scrollytelling Components
 import { ScrollProgress } from '@/components/scrollytelling/ScrollProgress';
@@ -49,6 +50,7 @@ export default function Page() {
           
           <ClubGallery />
           <CoachesGrid />
+          <Testimonials />
           
           <LogoDivider />
           <Leagues />

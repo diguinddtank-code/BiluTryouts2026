@@ -2,7 +2,6 @@
 
 import { useLanguage } from '@/components/bisa-tryouts/LanguageContext';
 import { useScrollReveal } from '@/hooks/useScrollReveal';
-import Image from 'next/image';
 import { useRef, useState, useEffect } from 'react';
 import { useInView } from 'motion/react';
 
@@ -58,7 +57,7 @@ export function WorldLanguages() {
             transitionDelay: '100ms'
           }}
         >
-          THE WORLD TRAINS HERE
+          // THE WORLD TRAINS HERE
         </span>
 
         <h2 className="font-montserrat font-black text-[clamp(44px,10vw,130px)] leading-[0.85] tracking-tight flex flex-col items-center mb-8">
@@ -174,27 +173,11 @@ export function WorldLanguages() {
             </div>
           </div>
 
-          {/* Paragraph & Image */}
+          {/* Paragraph */}
           <div className="flex flex-col gap-8">
             <p className="text-lg sm:text-xl leading-relaxed font-light text-white/[0.85]">
               {t.about.paragraph}
             </p>
-            
-            <div className="relative w-full h-[200px] sm:h-[250px] rounded-2xl overflow-hidden shadow-2xl border border-white/10">
-              <Image
-                src="https://i.imgur.com/3DJsUvI.jpeg"
-                alt="Athletes training"
-                fill
-                className="object-cover object-center"
-                referrerPolicy="no-referrer"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#022c22]/80 via-transparent to-transparent" />
-              <div className="absolute bottom-4 left-0 right-0 flex items-center justify-center">
-                <span className="font-montserrat font-bold text-xs sm:text-sm tracking-[3px] text-white uppercase text-center px-4 drop-shadow-md">
-                  Athletes from 6+ countries train together
-                </span>
-              </div>
-            </div>
           </div>
         </div>
       </div>
