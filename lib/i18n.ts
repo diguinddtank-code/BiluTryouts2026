@@ -65,7 +65,7 @@ export const i18n = {
     },
     location: {
       headline: 'Where & When',
-      addressName: 'Sangaree Middle School Gym',
+      addressName: 'Sangaree Middle School',
       addressStreet: '1050 Discovery Dr, Ladson, SC',
       dates: 'April 29th – May 9th',
       ageGroup: 'Age Group',
@@ -282,7 +282,7 @@ export const i18n = {
     },
     location: {
       headline: 'Dónde y Cuándo',
-      addressName: 'Gimnasio de Sangaree Middle School',
+      addressName: 'Sangaree Middle School',
       addressStreet: '1050 Discovery Dr, Ladson, SC',
       dates: '29 de Abril – 9 de Mayo',
       ageGroup: 'Categoría',
@@ -499,7 +499,7 @@ export const i18n = {
     },
     location: {
       headline: 'Onde e Quando',
-      addressName: 'Ginásio da Sangaree Middle School',
+      addressName: 'Sangaree Middle School',
       addressStreet: '1050 Discovery Dr, Ladson, SC',
       dates: '29 de Abril – 9 de Maio',
       ageGroup: 'Categoria',
