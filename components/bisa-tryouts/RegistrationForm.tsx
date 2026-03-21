@@ -3,11 +3,16 @@
 import {motion} from 'motion/react';
 import {useLanguage} from './LanguageContext';
 import { MousePointerClick, UserPlus, ShieldCheck, Trophy, Mail, RotateCcw, Zap } from 'lucide-react';
+import { trackPixelEvent } from '@/lib/pixel';
 
 export function RegistrationForm() {
   const {t} = useLanguage();
 
   const playmetricsUrl = "https://playmetrics.com/signup?clubToken=TG9naW4tQ2x1Yi52MS05OTEtMTc3OTAyMDM4M3x1dW9IaisxRnNyWFQxTVp3SE13WFFwVFJPZU12S0x2OG9OVkNBMk94ZDRnPQ==&program_id=92864";
+
+  const handleCtaClick = () => {
+    trackPixelEvent('Lead', { content_name: 'Registration CTA', destination: 'PlayMetrics' });
+  };
 
   const trustStripIcons = [
     <ShieldCheck key="shield" className="w-3.5 h-3.5 text-[#ccff00]" />,
@@ -118,6 +123,7 @@ export function RegistrationForm() {
           {/* Main CTA */}
           <motion.a
             href={playmetricsUrl}
+            onClick={handleCtaClick}
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{scale: 1.02, filter: "brightness(1.1)"}}
