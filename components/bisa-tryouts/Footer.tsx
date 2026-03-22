@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import {motion} from 'motion/react';
 import {useLanguage} from './LanguageContext';
-import {Facebook, Instagram, Mail, Phone} from 'lucide-react';
+import {Instagram, Mail, Phone} from 'lucide-react';
 
 export function Footer() {
   const {t} = useLanguage();
@@ -36,13 +36,10 @@ export function Footer() {
         </motion.div>
 
         <div className="flex items-center gap-6 mb-12">
-          <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#ccff00] hover:text-[#0a1f14] transition-colors">
-            <Facebook className="w-5 h-5" />
-          </a>
-          <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#ccff00] hover:text-[#0a1f14] transition-colors">
+          <a href="https://www.instagram.com/bilu_soccer/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#ccff00] hover:text-[#0a1f14] transition-colors">
             <Instagram className="w-5 h-5" />
           </a>
-          <a href="mailto:amoreira@bilusoccer.com" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#ccff00] hover:text-[#0a1f14] transition-colors">
+          <a href="mailto:info@bilusoccer.com" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#ccff00] hover:text-[#0a1f14] transition-colors">
             <Mail className="w-5 h-5" />
           </a>
           <a href="tel:8433049414" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#ccff00] hover:text-[#0a1f14] transition-colors">
