@@ -216,6 +216,10 @@ export const i18n = {
       line2: 'YOUR WINDOW.',
       sub: 'Elite coaching. Real development. Secure your spot today.',
       button: 'REGISTER MY CHILD NOW →'
+    },
+    whatsapp: {
+      message: 'Any questions? Chat with us!',
+      prefilled: 'Hi! I have a question about the BISA Tryouts.'
     }
   },
   ES: {
@@ -433,6 +437,10 @@ export const i18n = {
       line2: 'TU OPORTUNIDAD.',
       sub: 'Entrenamiento de élite. Desarrollo real. Asegura tu lugar hoy.',
       button: 'REGISTRAR A MI HIJO AHORA →'
+    },
+    whatsapp: {
+      message: '¿Alguna pregunta? ¡Chatea con nosotros!',
+      prefilled: '¡Hola! Tengo una pregunta sobre las pruebas de BISA.'
     }
   },
   PT: {
@@ -650,6 +658,10 @@ export const i18n = {
       line2: 'SUA CHANCE.',
       sub: 'Treinamento de elite. Desenvolvimento real. Garanta sua vaga hoje.',
       button: 'INSCREVER MEU FILHO AGORA →'
+    },
+    whatsapp: {
+      message: 'Alguma dúvida? Fale com a gente!',
+      prefilled: 'Olá! Tenho uma dúvida sobre as seletivas da BISA.'
     }
   },
 };

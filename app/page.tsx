@@ -12,6 +12,7 @@ import {FAQ} from '@/components/bisa-tryouts/FAQ';
 import {RegistrationForm} from '@/components/bisa-tryouts/RegistrationForm';
 import {Footer} from '@/components/bisa-tryouts/Footer';
 import {FloatingCTA} from '@/components/bisa-tryouts/FloatingCTA';
+import {FloatingWhatsApp} from '@/components/bisa-tryouts/FloatingWhatsApp';
 
 // New Components
 import { CoachesGrid } from '@/components/CoachesGrid';
@@ -41,6 +42,7 @@ export default function Page() {
         <ScrollProgress />
         <Navbar />
         <FloatingCTA />
+        <FloatingWhatsApp />
         <main className="flex-grow">
           <Hero />
           
