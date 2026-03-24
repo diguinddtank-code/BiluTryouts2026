@@ -56,7 +56,7 @@ export default function Page() {
           <LogoDivider />
           <Leagues />
           <LocationSchedule />
-          <RegistrationForm />
+          {/* <RegistrationForm /> */}
           <Timeline />
           <FAQ />
           

@@ -5,7 +5,6 @@ import {motion} from 'motion/react';
 import Image from 'next/image';
 import {useLanguage} from './LanguageContext';
 import { Star, Globe, MapPin, Trophy, ShieldCheck, Users, Zap } from 'lucide-react';
-import { trackPixelEvent } from '@/lib/pixel';
 
 const TRYOUT_DATE = new Date('2026-04-29T00:00:00').getTime();
 
@@ -17,12 +16,6 @@ export function Hero() {
     minutes: 0,
     seconds: 0,
   });
-
-  const playmetricsUrl = "https://playmetrics.com/signup?clubToken=TG9naW4tQ2x1Yi52MS05OTEtMTc3OTAyMDM4M3x1dW9IaisxRnNyWFQxTVp3SE13WFFwVFJPZU12S0x2OG9OVkNBMk94ZDRnPQ==&program_id=92864";
-
-  const handleCtaClick = () => {
-    trackPixelEvent('Lead', { content_name: 'Hero CTA', destination: 'PlayMetrics' });
-  };
 
   const marqueeIcons = [
     <Star key="star1" className="w-3.5 h-3.5 text-[#ccff00]" />,
@@ -150,8 +143,7 @@ export function Hero() {
           className="flex flex-col items-center gap-4"
         >
           <motion.a
-            href={playmetricsUrl}
-            onClick={handleCtaClick}
+            href="https://playmetrics.com"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{scale: 1.05}}

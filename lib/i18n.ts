@@ -145,6 +145,25 @@ export const i18n = {
       redirectCta: "REGISTER NOW — SECURE MY CHILD'S SPOT →",
       redirectDisclaimer: "You'll be redirected to PlayMetrics — our official and secure registration partner.",
       redirectUrgency: "Spots are filling fast — limited per age group",
+      actualForm: {
+        title: "REGISTER FOR TRYOUTS",
+        subtitle: "No commitment • Reply within 48hrs",
+        fields: {
+          playerName: "PLAYER FULL NAME *",
+          dob: "DATE OF BIRTH *",
+          ageGroup: "AGE GROUP *",
+          ageGroupPlaceholder: "Select Age Group",
+          position: "PRIMARY POSITION *",
+          positionPlaceholder: "Select Position",
+          cityState: "CITY / STATE *",
+          email: "EMAIL ADDRESS *",
+          phone: "PHONE NUMBER *",
+          hearAboutUs: "HOW DID YOU HEAR ABOUT US? *",
+          hearAboutUsPlaceholder: "Select an option",
+          anythingElse: "ANYTHING ELSE WE SHOULD KNOW?",
+        },
+        submit: "SUBMIT APPLICATION"
+      }
     },
     footer: {
       copyright: '© 2026 Bilu International Soccer Academy · Ladson, South Carolina',
@@ -366,6 +385,25 @@ export const i18n = {
       redirectCta: 'REGISTRAR AHORA — ASEGURAR EL LUGAR DE MI HIJO →',
       redirectDisclaimer: 'Serás redirigido a PlayMetrics — nuestro socio de registro oficial y seguro.',
       redirectUrgency: 'Los cupos son limitados por grupo de edad — no esperes',
+      actualForm: {
+        title: "REGISTRO PARA PRUEBAS",
+        subtitle: "Sin compromiso • Respuesta en 48hrs",
+        fields: {
+          playerName: "NOMBRE COMPLETO DEL JUGADOR *",
+          dob: "FECHA DE NACIMIENTO *",
+          ageGroup: "CATEGORÍA *",
+          ageGroupPlaceholder: "Selecciona una categoría",
+          position: "POSICIÓN PRINCIPAL *",
+          positionPlaceholder: "Selecciona una posición",
+          cityState: "CIUDAD / ESTADO *",
+          email: "CORREO ELECTRÓNICO *",
+          phone: "TELÉFONO *",
+          hearAboutUs: "¿CÓMO TE ENTERASTE DE NOSOTROS? *",
+          hearAboutUsPlaceholder: "Selecciona una opción",
+          anythingElse: "¿ALGO MÁS QUE DEBAMOS SABER?",
+        },
+        submit: "ENVIAR SOLICITUD"
+      }
     },
     footer: {
       copyright: '© 2026 Bilu International Soccer Academy · Ladson, South Carolina',
@@ -587,6 +625,25 @@ export const i18n = {
       redirectCta: 'INSCREVER AGORA — GARANTIR A VAGA DO MEU FILHO →',
       redirectDisclaimer: 'Você será redirecionado para o PlayMetrics — nosso parceiro oficial e seguro de inscrições.',
       redirectUrgency: 'As vagas são limitadas por faixa etária — não espere',
+      actualForm: {
+        title: "INSCRIÇÃO PARA SELETIVAS",
+        subtitle: "Sem compromisso • Resposta em 48h",
+        fields: {
+          playerName: "NOME COMPLETO DO JOGADOR *",
+          dob: "DATA DE NASCIMENTO *",
+          ageGroup: "CATEGORIA *",
+          ageGroupPlaceholder: "Selecione a categoria",
+          position: "POSIÇÃO PRINCIPAL *",
+          positionPlaceholder: "Selecione a posição",
+          cityState: "CIDADE / ESTADO *",
+          email: "E-MAIL *",
+          phone: "TELEFONE *",
+          hearAboutUs: "COMO NOS CONHECEU? *",
+          hearAboutUsPlaceholder: "Selecione uma opção",
+          anythingElse: "ALGO MAIS QUE DEVEMOS SABER?",
+        },
+        submit: "ENVIAR INSCRIÇÃO"
+      }
     },
     footer: {
       copyright: '© 2026 Bilu International Soccer Academy · Ladson, Carolina do Sul',
