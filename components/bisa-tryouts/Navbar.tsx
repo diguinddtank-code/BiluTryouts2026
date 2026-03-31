@@ -68,7 +68,7 @@ export function Navbar() {
 
           {/* Register Button */}
           <a
-            href="https://playmetrics.com"
+            href="https://playmetrics.com/signup?clubToken=TG9naW4tQ2x1Yi52MS05OTEtMTc3OTAyMDM4M3x1dW9IaisxRnNyWFQxTVp3SE13WFFwVFJPZU12S0x2OG9OVkNBMk94ZDRnPQ==&program_id=92864"
             target="_blank"
             rel="noopener noreferrer"
             className="hidden sm:flex items-center gap-2 px-6 py-2.5 bg-[#ccff00] text-[#0a1f14] font-montserrat font-black text-[12px] uppercase tracking-widest rounded-md hover:bg-white transition-colors duration-300"

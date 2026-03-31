@@ -143,7 +143,7 @@ export function Hero() {
           className="flex flex-col items-center gap-4"
         >
           <motion.a
-            href="https://playmetrics.com"
+            href="https://playmetrics.com/signup?clubToken=TG9naW4tQ2x1Yi52MS05OTEtMTc3OTAyMDM4M3x1dW9IaisxRnNyWFQxTVp3SE13WFFwVFJPZU12S0x2OG9OVkNBMk94ZDRnPQ==&program_id=92864"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{scale: 1.05}}

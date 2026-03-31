@@ -48,7 +48,7 @@ export function EpicCta() {
           }`}
         >
           <a 
-            href="https://playmetrics.com"
+            href="https://playmetrics.com/signup?clubToken=TG9naW4tQ2x1Yi52MS05OTEtMTc3OTAyMDM4M3x1dW9IaisxRnNyWFQxTVp3SE13WFFwVFJPZU12S0x2OG9OVkNBMk94ZDRnPQ==&program_id=92864"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block px-10 py-5 bg-[#ccff00] text-[#0a1f14] text-sm sm:text-base font-montserrat font-black tracking-widest uppercase rounded-xl hover:bg-white transition-colors duration-300 shadow-lg"

@@ -38,7 +38,7 @@ export function FloatingCTA() {
           className="fixed bottom-6 left-1/2 z-50 w-[90%] max-w-sm sm:max-w-md pointer-events-auto"
         >
           <a
-            href="https://playmetrics.com"
+            href="https://playmetrics.com/signup?clubToken=TG9naW4tQ2x1Yi52MS05OTEtMTc3OTAyMDM4M3x1dW9IaisxRnNyWFQxTVp3SE13WFFwVFJPZU12S0x2OG9OVkNBMk94ZDRnPQ==&program_id=92864"
             target="_blank"
             rel="noopener noreferrer"
             className="w-full py-4 px-6 bg-[#ccff00] text-[#0a1f14] font-montserrat font-black uppercase text-xs sm:text-sm tracking-widest rounded-full shadow-[0_10px_30px_rgba(204,255,0,0.4)] hover:shadow-[0_10px_40px_rgba(204,255,0,0.6)] hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2 border-2 border-white/20"
